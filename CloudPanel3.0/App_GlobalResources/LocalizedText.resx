@@ -1,0 +1,1961 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Global_AcceptedDomains" xml:space="preserve">
+    <value>Accepted Domains</value>
+  </data>
+  <data name="Global_ActivesyncPlans" xml:space="preserve">
+    <value>Activesync Plans</value>
+  </data>
+  <data name="Global_CitrixPlans" xml:space="preserve">
+    <value>Citrix Plans</value>
+  </data>
+  <data name="Global_Companies" xml:space="preserve">
+    <value>Companies</value>
+  </data>
+  <data name="Global_Company" xml:space="preserve">
+    <value>Company</value>
+  </data>
+  <data name="Global_CompanyPlans" xml:space="preserve">
+    <value>Company Plans</value>
+  </data>
+  <data name="Global_Contacts" xml:space="preserve">
+    <value>Contacts</value>
+  </data>
+  <data name="Global_Dashboard" xml:space="preserve">
+    <value>Dashboard</value>
+  </data>
+  <data name="Global_DisableEmail" xml:space="preserve">
+    <value>Disable Email</value>
+  </data>
+  <data name="Global_DistributionGroups" xml:space="preserve">
+    <value>Distribution Groups</value>
+  </data>
+  <data name="Global_Domains" xml:space="preserve">
+    <value>Domains</value>
+  </data>
+  <data name="Global_EnableEmail" xml:space="preserve">
+    <value>Enable Email</value>
+  </data>
+  <data name="Global_Error" xml:space="preserve">
+    <value>Error:</value>
+  </data>
+  <data name="Global_Import" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="Global_ImportCompany" xml:space="preserve">
+    <value>Import Company</value>
+  </data>
+  <data name="Global_LoginName" xml:space="preserve">
+    <value>Login Name</value>
+  </data>
+  <data name="Global_Logs" xml:space="preserve">
+    <value>Logs</value>
+  </data>
+  <data name="Global_Mailboxes" xml:space="preserve">
+    <value>Mailboxes</value>
+  </data>
+  <data name="Global_MailboxPlans" xml:space="preserve">
+    <value>Mailbox Plans</value>
+  </data>
+  <data name="Global_MicrosoftExchange" xml:space="preserve">
+    <value>Microsoft Exchange</value>
+  </data>
+  <data name="Global_MicrosoftLync" xml:space="preserve">
+    <value>Microsoft Lync</value>
+  </data>
+  <data name="Global_Overview" xml:space="preserve">
+    <value>Overview</value>
+  </data>
+  <data name="Global_Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="Global_Plans" xml:space="preserve">
+    <value>Plans</value>
+  </data>
+  <data name="Global_PublicFolders" xml:space="preserve">
+    <value>Public Folders</value>
+  </data>
+  <data name="Global_Reports" xml:space="preserve">
+    <value>Reports</value>
+  </data>
+  <data name="Global_Resellers" xml:space="preserve">
+    <value>Resellers</value>
+  </data>
+  <data name="Global_ResourceMailboxes" xml:space="preserve">
+    <value>Resource Mailboxes</value>
+  </data>
+  <data name="Global_Settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="Global_Signin" xml:space="preserve">
+    <value>Sign in</value>
+  </data>
+  <data name="Global_Signout" xml:space="preserve">
+    <value>Sign Out</value>
+  </data>
+  <data name="Global_Users" xml:space="preserve">
+    <value>Users</value>
+  </data>
+  <data name="Login_BruteForceBlock" xml:space="preserve">
+    <value>I'm sorry but you are blocked due to excessive failed login attempts.</value>
+  </data>
+  <data name="Login_DownForMaintenace" xml:space="preserve">
+    <value>I'm sorry but the sytsem is currently down for maintenance.</value>
+  </data>
+  <data name="Login_IncorrectPassword" xml:space="preserve">
+    <value>Incorrect username or password. Please try again.</value>
+  </data>
+  <data name="Login_InvalidSettings" xml:space="preserve">
+    <value>This application has invalid settings. Please contact support.</value>
+  </data>
+  <data name="Login_PermissionDenied" xml:space="preserve">
+    <value>Your account does not have permission. Please contact support.</value>
+  </data>
+  <data name="Master_SearchPlaceholder" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="AcceptedDomains" xml:space="preserve">
+    <value>Accepted Domains</value>
+  </data>
+  <data name="AcceptedDomainsInfo" xml:space="preserve">
+    <value>Before you can enable users for Exchange you must have at least one accepted domain. An Accepted Domain is a domain that our Exchange servers will receive email for.
+
+If you do not see your domain listed here then you need to add the domain on the company level.</value>
+  </data>
+  <data name="ActiveDirectory" xml:space="preserve">
+    <value>Active Directory</value>
+  </data>
+  <data name="ActiveSync" xml:space="preserve">
+    <value>ActiveSync</value>
+  </data>
+  <data name="ActiveSyncPlans" xml:space="preserve">
+    <value>ActiveSync Plans</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="AddADomain" xml:space="preserve">
+    <value>Add a Domain</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="Administrator" xml:space="preserve">
+    <value>Administrator</value>
+  </data>
+  <data name="Administrators" xml:space="preserve">
+    <value>Administrators</value>
+  </data>
+  <data name="Advanced" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="AdvancedCustomNameAttribute" xml:space="preserve">
+    <value>Custom 'Name' AD Attribute</value>
+  </data>
+  <data name="AdvancedCustomNameAttributeHelp" xml:space="preserve">
+    <value>By default CloudPanel will set the CN and name of the user to their UserPrincipalName. If you check this checkbox then you will be given the option to enter in what you would like the attribute to be instead of using the UserPrincipalName for the Active Directory 'Name' attribute.</value>
+  </data>
+  <data name="AgeLimit" xml:space="preserve">
+    <value>Age Limit</value>
+  </data>
+  <data name="Aliases" xml:space="preserve">
+    <value>Aliases</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="Allow" xml:space="preserve">
+    <value>Allow</value>
+  </data>
+  <data name="AllowAttachmentsDownload" xml:space="preserve">
+    <value>Allow attachments to be downloaded to device</value>
+  </data>
+  <data name="AllowBluetooth" xml:space="preserve">
+    <value>Allow Bluetooth</value>
+  </data>
+  <data name="AllowBrowser" xml:space="preserve">
+    <value>Allow Browser</value>
+  </data>
+  <data name="AllowCamera" xml:space="preserve">
+    <value>Allow camera</value>
+  </data>
+  <data name="AllowConflictingMeetingRequests" xml:space="preserve">
+    <value>Allow conflicting meeting requests</value>
+  </data>
+  <data name="AllowConsumerMail" xml:space="preserve">
+    <value>Allow consumer mail</value>
+  </data>
+  <data name="AllowDesktopSync" xml:space="preserve">
+    <value>Allow desktop synchronization</value>
+  </data>
+  <data name="AllowHTMLFormattedEmail" xml:space="preserve">
+    <value>Allow HTML formatted email</value>
+  </data>
+  <data name="AllowInfrared" xml:space="preserve">
+    <value>Allow Infrared</value>
+  </data>
+  <data name="AllowInternetSharingFromDevice" xml:space="preserve">
+    <value>Allow internet sharing from device</value>
+  </data>
+  <data name="AllowNonProvDevices" xml:space="preserve">
+    <value>Allow non-provisionable devices</value>
+  </data>
+  <data name="AllowOnlyDuringWorkHours" xml:space="preserve">
+    <value>Allow scheduling only during working hours</value>
+  </data>
+  <data name="AllowRemoteDesktopFromDevice" xml:space="preserve">
+    <value>Allow remote desktop from device</value>
+  </data>
+  <data name="AllowRemovableStorage" xml:space="preserve">
+    <value>Allow removable storage</value>
+  </data>
+  <data name="AllowRepeatingMeetings" xml:space="preserve">
+    <value>Allow repeating meetings</value>
+  </data>
+  <data name="AllowSimplePassword" xml:space="preserve">
+    <value>Allow simple password</value>
+  </data>
+  <data name="AllowTextMessaging" xml:space="preserve">
+    <value>Allow text messaging</value>
+  </data>
+  <data name="AllowUnsignedApplications" xml:space="preserve">
+    <value>Allow unsigned applications</value>
+  </data>
+  <data name="AllowUnsignedInstallPackages" xml:space="preserve">
+    <value>Allow unsigned installation packages</value>
+  </data>
+  <data name="AllowWiFi" xml:space="preserve">
+    <value>Allow Wi-Fi</value>
+  </data>
+  <data name="ApplicationSettingsInvalid" xml:space="preserve">
+    <value>The application settings are invalid. Please contact support.</value>
+  </data>
+  <data name="AreUsersAlreadyEnabledExchange" xml:space="preserve">
+    <value>Are these users already enabled for Exchange?</value>
+  </data>
+  <data name="ASHelp1" xml:space="preserve">
+    <value>Select your activesync plan to modify or choose Create New to create a new plan.</value>
+  </data>
+  <data name="ASHelp10" xml:space="preserve">
+    <value>This setting specifies whether the storage card must be encrypted. Not all mobile device operating systems support storage card encryption. For more information, see your mobile device and mobile operating system documentation.</value>
+  </data>
+  <data name="ASHelp11" xml:space="preserve">
+    <value>This setting enables or disables the ability to use a simple password such as 1111 or 1234. The default value is checked</value>
+  </data>
+  <data name="ASHelp12" xml:space="preserve">
+    <value>This setting specifies the number of attempts a user can make to enter the correct password for the mobile device. You can enter any number from 4 through 16. Leave blank to not set a limit.</value>
+  </data>
+  <data name="ASHelp13" xml:space="preserve">
+    <value>This setting specifies the minimum number of characters in the mobile device password. You can enter any number from 1 through 16. Leave blank to not set a minimum.</value>
+  </data>
+  <data name="ASHelp14" xml:space="preserve">
+    <value>This value specifies the length of time that the mobile device can be inactive before a password is required to reactivate it. You can enter any interval between 30 seconds and 1 hour. Leave blank to not set a timeout.</value>
+  </data>
+  <data name="ASHelp15" xml:space="preserve">
+    <value>This setting enables the administrator to configure a length of time after which a mobile device password must be changed. Leave blank to not set a password expiration</value>
+  </data>
+  <data name="ASHelp16" xml:space="preserve">
+    <value>This setting specifies the number of past passwords that can be stored in a user's mailbox. A user can't reuse a stored password. Put a zero to not keep a password history.</value>
+  </data>
+  <data name="ASHelp17" xml:space="preserve">
+    <value>The include past calendar items parameter specifies the maximum range of calendar days that can be synchronized to the device.</value>
+  </data>
+  <data name="ASHelp18" xml:space="preserve">
+    <value>The include past e-mail items parameter specifies the maximum number of days of e-mail items to synchronize to the device.</value>
+  </data>
+  <data name="ASHelp19" xml:space="preserve">
+    <value>The limit e-mail size parameter specifies the maximum size at which e-mail messages are truncated when synchronized to the device. The value is specified in kilobytes</value>
+  </data>
+  <data name="ASHelp2" xml:space="preserve">
+    <value>Enter the display name of the Activesync plan. This name must be unique.</value>
+  </data>
+  <data name="ASHelp20" xml:space="preserve">
+    <value>The RequireManualSyncWhenRoaming parameter specifies whether the device must synchronize manually while roaming. The default value is checked.</value>
+  </data>
+  <data name="ASHelp21" xml:space="preserve">
+    <value>The AllowHTMLEmail parameter specifies whether HTML e-mail is enabled on the device. The default value is checked.</value>
+  </data>
+  <data name="ASHelp22" xml:space="preserve">
+    <value>The AttachmentsEnabled parameter specifies whether the user can download attachments. When set to $false, the user is blocked from downloading attachments. The default value is checked.</value>
+  </data>
+  <data name="ASHelp23" xml:space="preserve">
+    <value>The MaxAttachmentSize parameter specifies the maximum size of attachments that can be downloaded to the mobile phone. Leave blank for unlimited size.</value>
+  </data>
+  <data name="ASHelp24" xml:space="preserve">
+    <value>The allow removable storage parameter specifies whether the device can access information stored on a storage card. Default value is checked.</value>
+  </data>
+  <data name="ASHelp25" xml:space="preserve">
+    <value>If you want to allow the device to use the built-in camera. Default value is checked.</value>
+  </data>
+  <data name="ASHelp26" xml:space="preserve">
+    <value>If you want the device to use Wi-Fi. Default value is checked.</value>
+  </data>
+  <data name="ASHelp27" xml:space="preserve">
+    <value>If you want to allow the device to use infrared connections. Default value is checked.</value>
+  </data>
+  <data name="ASHelp28" xml:space="preserve">
+    <value>If you want the device to be able to share it's internet connection with other devices. Default value is checked.</value>
+  </data>
+  <data name="ASHelp29" xml:space="preserve">
+    <value>If you want the device to be able use to remote desktop connections. Default value is checked.</value>
+  </data>
+  <data name="ASHelp3" xml:space="preserve">
+    <value>This setting specifies whether mobile devices that may not support application of all policy settings are allowed to connect to Exchange by using Exchange ActiveSync. Allowing non-provisionable mobile devices has security implications. For example, some non-provisionable devices may not be able to implement an organization’s password requirements.</value>
+  </data>
+  <data name="ASHelp30" xml:space="preserve">
+    <value>If you want the device to be able to sync with the desktop. Default value is checked.</value>
+  </data>
+  <data name="ASHelp31" xml:space="preserve">
+    <value>If you want the device to be able to access text messaging. Default value is checked.</value>
+  </data>
+  <data name="ASHelp32" xml:space="preserve">
+    <value>If you want to allow the device to use bluetooth. Default value is Allow.</value>
+  </data>
+  <data name="ASHelp34" xml:space="preserve">
+    <value>If you want the mobile device to be able to configure personal email accounts on this device. Default value is checked.</value>
+  </data>
+  <data name="ASHelp35" xml:space="preserve">
+    <value>The allow unsigned applications parameter specifies whether unsigned applications can be installed on the device. Default value is checked.</value>
+  </data>
+  <data name="ASHelp36" xml:space="preserve">
+    <value>The allow unsigned installation packages parameter specifies whether unsigned installation packages can be run on the device. Default value is checked.</value>
+  </data>
+  <data name="ASHelp4" xml:space="preserve">
+    <value>This setting specifies how often the mobile device mailbox policy is sent from the server to the mobile device. Leave blank if you do not want to set this.</value>
+  </data>
+  <data name="ASHelp5" xml:space="preserve">
+    <value>If you want to require a password on the device.</value>
+  </data>
+  <data name="ASHelp6" xml:space="preserve">
+    <value>If you want to require a certain number of alpha numeric characters in their password.</value>
+  </data>
+  <data name="ASHelp7" xml:space="preserve">
+    <value>Enter the number of alpha numeric characters you require the password to have.</value>
+  </data>
+  <data name="ASHelp8" xml:space="preserve">
+    <value>When this setting is enabled, the mobile device generates a recovery password that's sent to the server. If the user forgets their mobile device password, the recovery password can be used to unlock the mobile device and enable the user to create a new mobile device password.</value>
+  </data>
+  <data name="ASHelp9" xml:space="preserve">
+    <value>This setting specifies whether device encryption is required. If checked, the mobile device must be able to support and implement encryption to synchronize with the server.</value>
+  </data>
+  <data name="ASRequireExchangeEnterpriseLicense" xml:space="preserve">
+    <value>The ability to modify policies on this tab is a premium Exchange ActiveSync feature that requires an Exchange Enterprise Client Access License for each mailbox policies are restricted on.</value>
+  </data>
+  <data name="AssignedToCompany" xml:space="preserve">
+    <value>Assigned To Company</value>
+  </data>
+  <data name="Billing" xml:space="preserve">
+    <value>Billing</value>
+  </data>
+  <data name="BillingAdmins" xml:space="preserve">
+    <value>Billing Admins</value>
+  </data>
+  <data name="BillingAdminsHelp" xml:space="preserve">
+    <value>Enter a list of Active Directory security groups that have access to billing features in CloudPanel. Example: Domain Admins</value>
+  </data>
+  <data name="BillingCurrencySymbol" xml:space="preserve">
+    <value>Currency Symbol</value>
+  </data>
+  <data name="BookingWindow" xml:space="preserve">
+    <value>Booking Window (days)</value>
+  </data>
+  <data name="Button_Add" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="Button_Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Button_Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Button_Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="Button_Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="CannotDeleteOnlyDomain" xml:space="preserve">
+    <value>You cannot delete this domain because it is the only domain listed. Please add another domain before removing this one.</value>
+  </data>
+  <data name="Capacity" xml:space="preserve">
+    <value>Capacity</value>
+  </data>
+  <data name="ChooseCitrixApplication" xml:space="preserve">
+    <value>Choose Citrix Application</value>
+  </data>
+  <data name="Citrix" xml:space="preserve">
+    <value>Citrix</value>
+  </data>
+  <data name="CitrixEnabledHelp" xml:space="preserve">
+    <value>Check this if you want to offer Citrix Virtual Applications and Servers to your clients</value>
+  </data>
+  <data name="CitrixGroupName" xml:space="preserve">
+    <value>Enter the name of the security group: </value>
+  </data>
+  <data name="CITRIXHelp1" xml:space="preserve">
+    <value>Enter a display name for this application / server.</value>
+  </data>
+  <data name="CITRIXHelp2" xml:space="preserve">
+    <value>You can choose a image to be displayed next to this application or you can leave it blank for a default image.</value>
+  </data>
+  <data name="CITRIXHelp3" xml:space="preserve">
+    <value>Enter a description that describes what this application is.</value>
+  </data>
+  <data name="CITRIXHelp4" xml:space="preserve">
+    <value>Enter a cost (per user) for this application / server.</value>
+  </data>
+  <data name="CITRIXHelp5" xml:space="preserve">
+    <value>Enter a price (per user) for this application / server.</value>
+  </data>
+  <data name="CITRIXHelp6" xml:space="preserve">
+    <value>If this company is for a specific company then select it from the drop down box. Otherwise leave it blank.</value>
+  </data>
+  <data name="CITRIXHelp7" xml:space="preserve">
+    <value>Is this a published desktop or a virtual application?</value>
+  </data>
+  <data name="CITRIXHelp8" xml:space="preserve">
+    <value>Check this box if you want CloudPanel to create the security groups you for automatically. If you uncheck this box then you must provide the name of the group to associate this application with.</value>
+  </data>
+  <data name="CitrixPlans" xml:space="preserve">
+    <value>Citrix Plans</value>
+  </data>
+  <data name="CitrixPlansByCustomer" xml:space="preserve">
+    <value>Citrix Plans by Customer</value>
+  </data>
+  <data name="CitrixPlansByCustomerDesc" xml:space="preserve">
+    <value>This report will show you how many users are assigned to which Citrix application along with cost and prices.</value>
+  </data>
+  <data name="CitrixSettings" xml:space="preserve">
+    <value>Citrix Settings</value>
+  </data>
+  <data name="CitrixUsers" xml:space="preserve">
+    <value>Citrix Users</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="Code" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="Companies" xml:space="preserve">
+    <value>Companies</value>
+  </data>
+  <data name="Companies_DeleteOUPath" xml:space="preserve">
+    <value>Just for your information the distinguished name of the organizational unit that will be deleted is:</value>
+  </data>
+  <data name="Companies_DeleteVerification" xml:space="preserve">
+    <value>To delete please type the following value in the textbox:</value>
+  </data>
+  <data name="Companies_DeleteWarning" xml:space="preserve">
+    <value>Before deleting a company you must make sure it is disabled for Exchange. Removing a company will delete all users, groups, mailboxes, and the organizational unit for this company. This action is not reversable.</value>
+  </data>
+  <data name="Companies_PointofContact" xml:space="preserve">
+    <value>Point of Contact</value>
+  </data>
+  <data name="Company" xml:space="preserve">
+    <value>Company</value>
+  </data>
+  <data name="CompanyAdmin" xml:space="preserve">
+    <value>Company Admin</value>
+  </data>
+  <data name="CompanyCode" xml:space="preserve">
+    <value>Company Code</value>
+  </data>
+  <data name="CompanyName" xml:space="preserve">
+    <value>Company Name</value>
+  </data>
+  <data name="CompanyOverview" xml:space="preserve">
+    <value>Company Overview</value>
+  </data>
+  <data name="CompanyPlans" xml:space="preserve">
+    <value>Company Plans</value>
+  </data>
+  <data name="ConflictPercentageAllowed" xml:space="preserve">
+    <value>Conflict percentage allowed</value>
+  </data>
+  <data name="Contacts" xml:space="preserve">
+    <value>Contacts</value>
+  </data>
+  <data name="ConvertedGigabytes" xml:space="preserve">
+    <value>Converted Gigabytes</value>
+  </data>
+  <data name="ConvertedMegabytes" xml:space="preserve">
+    <value>Converted Megabytes</value>
+  </data>
+  <data name="Cost" xml:space="preserve">
+    <value>Cost</value>
+  </data>
+  <data name="CostPerCompany" xml:space="preserve">
+    <value>Cost Per Company</value>
+  </data>
+  <data name="CostPerMailbox" xml:space="preserve">
+    <value>Cost per Mailbox</value>
+  </data>
+  <data name="Count" xml:space="preserve">
+    <value>Count</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="Create" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="Created" xml:space="preserve">
+    <value>Created</value>
+  </data>
+  <data name="CreateGroups" xml:space="preserve">
+    <value>Create Groups?</value>
+  </data>
+  <data name="CreateNew" xml:space="preserve">
+    <value>--- Create New ---</value>
+  </data>
+  <data name="CurrentDomains" xml:space="preserve">
+    <value>Current Domains</value>
+  </data>
+  <data name="CurrentDomainsSubtitle" xml:space="preserve">
+    <value>Add a domain that can be used for your user's login name</value>
+  </data>
+  <data name="CurrentSize" xml:space="preserve">
+    <value>Current Size</value>
+  </data>
+  <data name="CurrentUsers" xml:space="preserve">
+    <value>Current Users</value>
+  </data>
+  <data name="CustomersByExchangePlan" xml:space="preserve">
+    <value>Customers by Exchange Plan</value>
+  </data>
+  <data name="CustomersByExchangePlanDesc" xml:space="preserve">
+    <value>This report will break out a seperate section for each Exchange Mailbox Plan that are in the system and list each customer that has this plan. It will give you the amount of users, additional GB that was added per company, your cost, the customers price, and an estimated profit.</value>
+  </data>
+  <data name="CustomPrice" xml:space="preserve">
+    <value>Custom Price</value>
+  </data>
+  <data name="CustomPrices" xml:space="preserve">
+    <value>Custom Prices</value>
+  </data>
+  <data name="CustomPricingCitrixTitle" xml:space="preserve">
+    <value>Citrix Custom Pricing</value>
+  </data>
+  <data name="CustomPricingExchangePFTitle" xml:space="preserve">
+    <value>Exchange Public Folder Custom Pricing</value>
+  </data>
+  <data name="CustomPricingExchangeTitle" xml:space="preserve">
+    <value>Exchange Plan Custom Pricing</value>
+  </data>
+  <data name="CustomProperties" xml:space="preserve">
+    <value>Custom Properties</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>Dashboard</value>
+  </data>
+  <data name="Dashboard_CitrixUsers" xml:space="preserve">
+    <value>Citrix Users</value>
+  </data>
+  <data name="Dashboard_ExchangeDatabases" xml:space="preserve">
+    <value>Exchange Databases</value>
+  </data>
+  <data name="Dashboard_HistoryChart" xml:space="preserve">
+    <value>History Chart</value>
+  </data>
+  <data name="Dashboard_MailboxSpaceAllocated" xml:space="preserve">
+    <value>Mailbox Space Allocated</value>
+  </data>
+  <data name="Dashboard_SizeInGigabytes" xml:space="preserve">
+    <value>Size in Gigabytes</value>
+  </data>
+  <data name="Dashboard_Top5LargestCustomers" xml:space="preserve">
+    <value>Top 5 Largest Customers</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="DefaultPrice" xml:space="preserve">
+    <value>Default Price</value>
+  </data>
+  <data name="Delegates" xml:space="preserve">
+    <value>Delegates</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="DeleteCompanyExchEnabled" xml:space="preserve">
+    <value>This company is enabled for Exchange. Please disable Exchange for this company before continuing.</value>
+  </data>
+  <data name="DeleteCompanyOU" xml:space="preserve">
+    <value>Just for your information the distinguished name of the organizational unit that will be deleted is:</value>
+  </data>
+  <data name="DeleteCompanyWarning" xml:space="preserve">
+    <value>Before deleting a company you must make sure it is disabled for Exchange. Removing a company will delete all users, groups, mailboxes, and the organizational unit for this company. This action is not reversable.</value>
+  </data>
+  <data name="DeleteDistributionGroup" xml:space="preserve">
+    <value>Delete Distribution Group</value>
+  </data>
+  <data name="DeleteDistributionGroupAreYouSure" xml:space="preserve">
+    <value>Are you sure you want to delete this distribution group?</value>
+  </data>
+  <data name="DeleteDistributionGroupInfo" xml:space="preserve">
+    <value>Deleting this group is not reversable. Once you delete this group you will have to recreate it if you want it back.</value>
+  </data>
+  <data name="DeleteSuccessPlan" xml:space="preserve">
+    <value>Successfully deleted the plan</value>
+  </data>
+  <data name="DeleteVerification" xml:space="preserve">
+    <value>To delete please type the following value in the textbox:</value>
+  </data>
+  <data name="DeleteWarningCompanyPlan" xml:space="preserve">
+    <value>Unable to delete the company plan because there are Companies currently assigned to this plan.</value>
+  </data>
+  <data name="DeliverAndForward" xml:space="preserve">
+    <value>Deliver to Mailbox and Forward</value>
+  </data>
+  <data name="DeliveryManagement" xml:space="preserve">
+    <value>Delivery Management</value>
+  </data>
+  <data name="DeliveryManagementTotal" xml:space="preserve">
+    <value>By default, only senders inside your organization can send messages to this group. You can also allow people outside the organization to send to this group. Choose one of the options below:</value>
+  </data>
+  <data name="DeliveryManagement_A" xml:space="preserve">
+    <value>Only senders inside my organization can send to this group</value>
+  </data>
+  <data name="DeliveryManagement_B" xml:space="preserve">
+    <value>Senders inside and outside of my organization can send to this group</value>
+  </data>
+  <data name="DeliveryManagement_C" xml:space="preserve">
+    <value>If you want to restrict who can send messages to the group, add users or groups to the list below. Only the specified senders will be able to send to the group and mail sent by anyone else will be rejected.</value>
+  </data>
+  <data name="Department" xml:space="preserve">
+    <value>Department</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="DeselectAll" xml:space="preserve">
+    <value>Deselect All</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="Device" xml:space="preserve">
+    <value>Device</value>
+  </data>
+  <data name="DeviceApplications" xml:space="preserve">
+    <value>Device Applications</value>
+  </data>
+  <data name="Disable" xml:space="preserve">
+    <value>Disable</value>
+  </data>
+  <data name="DisableExchange" xml:space="preserve">
+    <value>Disable Exchange</value>
+  </data>
+  <data name="DisableExchangeDesc" xml:space="preserve">
+    <value>Disabling Exchange will delete all mailboxes, distribution groups, contacts, address lists, and everything else that relates to your company. This action is not reversable. Please be sure this is what you want to do before continuing.</value>
+  </data>
+  <data name="DisableExchangeDesc2" xml:space="preserve">
+    <value>To disable Exchange please type the following characters in the textbox below: </value>
+  </data>
+  <data name="DisablePublicFolders" xml:space="preserve">
+    <value>Disable Public Folders</value>
+  </data>
+  <data name="DisablePublicFoldersDesc" xml:space="preserve">
+    <value>Disabling public folders will permanently delete all data in the public folders. This action is not reversable.</value>
+  </data>
+  <data name="DisablePublicFoldersTitle" xml:space="preserve">
+    <value>Are you sure you want to disable public folders?</value>
+  </data>
+  <data name="DisableUsersMailbox" xml:space="preserve">
+    <value>Disable mailbox</value>
+  </data>
+  <data name="DisableUsersMailboxAreYouSure" xml:space="preserve">
+    <value>Are you sure you want to disable this mailbox?</value>
+  </data>
+  <data name="DisableUsersMailboxAreYouSureDesc" xml:space="preserve">
+    <value>Disabling a mailbox will permanently delete all of their email and items in the mailbox. This action is not reversable.</value>
+  </data>
+  <data name="DisplayName" xml:space="preserve">
+    <value>Display Name</value>
+  </data>
+  <data name="DistinguishedName" xml:space="preserve">
+    <value>Distinguished Name</value>
+  </data>
+  <data name="DistributionGroups" xml:space="preserve">
+    <value>Distribution Groups</value>
+  </data>
+  <data name="DistributionLists" xml:space="preserve">
+    <value>Distribution Lists</value>
+  </data>
+  <data name="Domain" xml:space="preserve">
+    <value>Domain</value>
+  </data>
+  <data name="DomainAlreadyExists" xml:space="preserve">
+    <value>The domain you entered already exists</value>
+  </data>
+  <data name="DomainController" xml:space="preserve">
+    <value>Domain Controller</value>
+  </data>
+  <data name="DomainControllerHelp" xml:space="preserve">
+    <value>This is the domain controller that CloudPanel communicates with. It is best to use the FQDN.</value>
+  </data>
+  <data name="DOMAINHelp1" xml:space="preserve">
+    <value>Enter a domain name that your company uses (domain.com, domain.net, etc)</value>
+  </data>
+  <data name="DomainInfo" xml:space="preserve">
+    <value>Add a domain that can be used for your user's login name.</value>
+  </data>
+  <data name="DomainInUse" xml:space="preserve">
+    <value>The domain you entered cannot be used because it already exists in the system.</value>
+  </data>
+  <data name="DomainName" xml:space="preserve">
+    <value>Domain Name</value>
+  </data>
+  <data name="Domains" xml:space="preserve">
+    <value>Domains</value>
+  </data>
+  <data name="ECP" xml:space="preserve">
+    <value>ECP</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="EditPublicFolders" xml:space="preserve">
+    <value>Edit Public Folders</value>
+  </data>
+  <data name="EditPublicFoldersDesc" xml:space="preserve">
+    <value>You can change your public folder plan to increase the amount of space and features you can use.</value>
+  </data>
+  <data name="EditPublicFoldersTitle" xml:space="preserve">
+    <value>Change your public folder plan</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="EmailAddress" xml:space="preserve">
+    <value>Email Address</value>
+  </data>
+  <data name="EmailAliasAlreadyExists" xml:space="preserve">
+    <value>The email address already exists: </value>
+  </data>
+  <data name="EmailAliases" xml:space="preserve">
+    <value>Email Aliases</value>
+  </data>
+  <data name="EmailEnabled" xml:space="preserve">
+    <value>Email Enabled</value>
+  </data>
+  <data name="Enable" xml:space="preserve">
+    <value>Enable</value>
+  </data>
+  <data name="EnableExchange" xml:space="preserve">
+    <value>Enable Exchange</value>
+  </data>
+  <data name="EnableExchangeDesc" xml:space="preserve">
+    <value>This company has not been enabled for Exchange server yet. Before this company can create mailboxes, distribution groups, contacts, and other Exchange objects, it must first be enabled.</value>
+  </data>
+  <data name="EnablePasswordRecovery" xml:space="preserve">
+    <value>Enable password recovery</value>
+  </data>
+  <data name="EnablePerUserReadState" xml:space="preserve">
+    <value>Enable Per User Read State</value>
+  </data>
+  <data name="EnablePublicFolders" xml:space="preserve">
+    <value>Enable Public Folders</value>
+  </data>
+  <data name="EnablePublicFoldersDesc" xml:space="preserve">
+    <value>After enabling public folders the company administrators can modify the permissions from within Outlook.</value>
+  </data>
+  <data name="EnablePublicFoldersTitle" xml:space="preserve">
+    <value>Enabling public folders will grant the company administrators as owners and the rest of the users read only rights.</value>
+  </data>
+  <data name="EnableResellerAccounts" xml:space="preserve">
+    <value>Enable Reseller Accounts</value>
+  </data>
+  <data name="EnableResourceBookingAttendant" xml:space="preserve">
+    <value>Enable the Resource Booking Attendant</value>
+  </data>
+  <data name="EnforcePasswordHistory" xml:space="preserve">
+    <value>Enforce password history</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="ErrorLoadingChart" xml:space="preserve">
+    <value>Error loading chart: </value>
+  </data>
+  <data name="ErrorLoadingStatistics" xml:space="preserve">
+    <value>Error retrieving statistics:</value>
+  </data>
+  <data name="ErrorLog" xml:space="preserve">
+    <value>Error Log</value>
+  </data>
+  <data name="EstimatedCost" xml:space="preserve">
+    <value>Estimated Cost</value>
+  </data>
+  <data name="Exchange" xml:space="preserve">
+    <value>Exchange</value>
+  </data>
+  <data name="ExchangeAllocated" xml:space="preserve">
+    <value>Exchange Allocated</value>
+  </data>
+  <data name="ExchangeConnectionType" xml:space="preserve">
+    <value>Connection Type</value>
+  </data>
+  <data name="ExchangeConnectionTypeHelp" xml:space="preserve">
+    <value>Choose how CloudPanel communicates with Exchange. Choosing 'Basic Authentication' requires that the Powershell virtual directory be enabled for Basic Authentication on the Exchange server.</value>
+  </data>
+  <data name="ExchangeContacts" xml:space="preserve">
+    <value>Exchange Contacts</value>
+  </data>
+  <data name="ExchangePlansByCustomer" xml:space="preserve">
+    <value>Exchange Plans by Customer</value>
+  </data>
+  <data name="ExchangePlansByCustomerDesc" xml:space="preserve">
+    <value>This report will list each customer with a column per mailbox plan so you can see on one row what the customer is currently using.</value>
+  </data>
+  <data name="ExchangeServer" xml:space="preserve">
+    <value>Exchange Server</value>
+  </data>
+  <data name="ExchangeServerHelp" xml:space="preserve">
+    <value>Enter the NETBIOS or FQDN of the Exchange server that CloudPanel communicates with (Can be CAS or Mailbox)</value>
+  </data>
+  <data name="ExchangeSettings" xml:space="preserve">
+    <value>Exchange Settings</value>
+  </data>
+  <data name="ExchangeSSLEnabled" xml:space="preserve">
+    <value>Exchange SSL Enabled</value>
+  </data>
+  <data name="ExchangeSSLEnabledHelp" xml:space="preserve">
+    <value>Choose if CloudPanel communicates to the Powershell virtual directory using HTTP or HTTPS. By default Exchange will not allow remote powershell using HTTP. You must enable unencrypted access if you choose HTTP.</value>
+  </data>
+  <data name="ExchangeStatsEnabled" xml:space="preserve">
+    <value>Exchange Statistics Enabled</value>
+  </data>
+  <data name="ExchangeStatsEnabledHelp" xml:space="preserve">
+    <value>CloudPanel has a service that can run and gather statistics from your Exchange environment. Enabling this feature will enable the stats to show on the page but does require that you setup the CloudPanel Exchange Statistics service.</value>
+  </data>
+  <data name="ExchangeStatsRetrieve1" xml:space="preserve">
+    <value>Retrieve mailbox sizes every (days):</value>
+  </data>
+  <data name="ExchangeStatsRetrieve1Help" xml:space="preserve">
+    <value>Enter the X amount of days you want to query Exchange for all users mailbox sizes. You can put a ZERO (0) to disable this task.</value>
+  </data>
+  <data name="ExchangeStatsRetrieve2" xml:space="preserve">
+    <value>Retrieve mailbox database sizes every (days):</value>
+  </data>
+  <data name="ExchangeStatsRetrieve2Help" xml:space="preserve">
+    <value>Enter the X amount of days you want to query Exchange for all of your mailbox database sizes. You can put a ZERO (0) to disable this task.</value>
+  </data>
+  <data name="ExchangeVariables" xml:space="preserve">
+    <value>Exchange Variables</value>
+  </data>
+  <data name="ExchangeVariablesInfo" xml:space="preserve">
+    <value>When you select other you can use these common variables or if you have just selected one user you can simply type in their email how you would like it (Example: John.Doe or if using variables: %g.%s)</value>
+  </data>
+  <data name="ExchangeVersion" xml:space="preserve">
+    <value>Exchange Version</value>
+  </data>
+  <data name="ExistingUsersFound" xml:space="preserve">
+    <value>Existing Users Found</value>
+  </data>
+  <data name="Features" xml:space="preserve">
+    <value>Features</value>
+  </data>
+  <data name="FirstInitialLastName" xml:space="preserve">
+    <value>FirstInitialLastName</value>
+  </data>
+  <data name="FirstName" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="Forwarding" xml:space="preserve">
+    <value>Forwarding</value>
+  </data>
+  <data name="ForwardMeetingRequestsToDelegates" xml:space="preserve">
+    <value>Forward meeting requests to delegates</value>
+  </data>
+  <data name="ForwardTo" xml:space="preserve">
+    <value>Forward To</value>
+  </data>
+  <data name="FullName" xml:space="preserve">
+    <value>Full Name</value>
+  </data>
+  <data name="General" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="Global_Address" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="Global_Administrator" xml:space="preserve">
+    <value>Administrator</value>
+  </data>
+  <data name="Global_Billing" xml:space="preserve">
+    <value>Billing</value>
+  </data>
+  <data name="Global_Citrix" xml:space="preserve">
+    <value>Citrix</value>
+  </data>
+  <data name="Global_City" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="Global_CompanyCode" xml:space="preserve">
+    <value>Company Code</value>
+  </data>
+  <data name="Global_Count" xml:space="preserve">
+    <value>Count</value>
+  </data>
+  <data name="Global_Country" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="Global_Created" xml:space="preserve">
+    <value>Created</value>
+  </data>
+  <data name="Global_CustomPrice" xml:space="preserve">
+    <value>Custom Price</value>
+  </data>
+  <data name="Global_DisplayName" xml:space="preserve">
+    <value>Display Name</value>
+  </data>
+  <data name="Global_DomainName" xml:space="preserve">
+    <value>Domain Name</value>
+  </data>
+  <data name="Global_Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="Global_EnableLync" xml:space="preserve">
+    <value>Enable Lync</value>
+  </data>
+  <data name="Global_ModifyAccess" xml:space="preserve">
+    <value>Modify Access</value>
+  </data>
+  <data name="Global_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Global_Phone" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="Global_Reseller" xml:space="preserve">
+    <value>Reseller</value>
+  </data>
+  <data name="Global_Results" xml:space="preserve">
+    <value>Results</value>
+  </data>
+  <data name="Global_Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="Global_State" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="Global_Statistics" xml:space="preserve">
+    <value>Statistics</value>
+  </data>
+  <data name="Global_Website" xml:space="preserve">
+    <value>Website</value>
+  </data>
+  <data name="Global_ZipCode" xml:space="preserve">
+    <value>Zip Code</value>
+  </data>
+  <data name="GroupMustChooseMember" xml:space="preserve">
+    <value>Before you can create a group you must specify at least one user as a member</value>
+  </data>
+  <data name="GroupMustChooseOwner" xml:space="preserve">
+    <value>Before you can create a group you must specify at least one user as the owner</value>
+  </data>
+  <data name="GroupName" xml:space="preserve">
+    <value>Group Name</value>
+  </data>
+  <data name="HandsFree" xml:space="preserve">
+    <value>Hands Free Only</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="Hidden" xml:space="preserve">
+    <value>Hidden</value>
+  </data>
+  <data name="HostingOU" xml:space="preserve">
+    <value>Hosting Organizational Unit</value>
+  </data>
+  <data name="HostingOUHelp" xml:space="preserve">
+    <value>This is the DistinguishedName of the OU that holds all your resellers and companies. (Example: OU=Hosting,DC=domain,DC=local)</value>
+  </data>
+  <data name="IfYouDontWantToResetPassword" xml:space="preserve">
+    <value>If you do not want to reset the password just leave the password fields blank.</value>
+  </data>
+  <data name="Image" xml:space="preserve">
+    <value>Image</value>
+  </data>
+  <data name="IMAP" xml:space="preserve">
+    <value>IMAP</value>
+  </data>
+  <data name="Import" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="ImportCompany" xml:space="preserve">
+    <value>Import Company</value>
+  </data>
+  <data name="ImportCompanyError1" xml:space="preserve">
+    <value>You can not add this company because it appears another company is already using the domain: </value>
+  </data>
+  <data name="ImportExistingUsers" xml:space="preserve">
+    <value>Existing Users</value>
+  </data>
+  <data name="InactivityTimeoutInMin" xml:space="preserve">
+    <value>Inactivity Timeout (Minutes)</value>
+  </data>
+  <data name="IncludePastCalendarItems" xml:space="preserve">
+    <value>Include past calendar items</value>
+  </data>
+  <data name="IncludePastEmailItems" xml:space="preserve">
+    <value>Include past email items</value>
+  </data>
+  <data name="InvalidDomain" xml:space="preserve">
+    <value>Domain is invalid.</value>
+  </data>
+  <data name="InvalidSecurityCode" xml:space="preserve">
+    <value>The security code yo uentered is incorrect. Please try again.</value>
+  </data>
+  <data name="IsPrimary" xml:space="preserve">
+    <value>Is Primary?</value>
+  </data>
+  <data name="IsServer" xml:space="preserve">
+    <value>Is Server?</value>
+  </data>
+  <data name="KeepDeletedItems" xml:space="preserve">
+    <value>Keep Deleted Items (Days)</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="LastName" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="LastNameFirstInitial" xml:space="preserve">
+    <value>LastNameFirstInitial</value>
+  </data>
+  <data name="LimitEmailSizeInKB" xml:space="preserve">
+    <value>Limit email size (KB)</value>
+  </data>
+  <data name="LimitReached" xml:space="preserve">
+    <value>Limit Reached</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="LoginError" xml:space="preserve">
+    <value>Login failed. Please try again.</value>
+  </data>
+  <data name="LoginInformation" xml:space="preserve">
+    <value>Login Information</value>
+  </data>
+  <data name="LoginName" xml:space="preserve">
+    <value>Login Name</value>
+  </data>
+  <data name="LoginNoAccess" xml:space="preserve">
+    <value>You do not have access to this system.</value>
+  </data>
+  <data name="Logo" xml:space="preserve">
+    <value>Logo</value>
+  </data>
+  <data name="LogoInfo" xml:space="preserve">
+    <value>You will have to modify your logo size to fix the window. If the logo exceeds the size of the space at the top left then it will not appear.</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="Logs" xml:space="preserve">
+    <value>Logs</value>
+  </data>
+  <data name="LyncUsers" xml:space="preserve">
+    <value>Lync Users</value>
+  </data>
+  <data name="MailboxDatabasesBySize" xml:space="preserve">
+    <value>Mailbox Databases by Size</value>
+  </data>
+  <data name="Mailboxes" xml:space="preserve">
+    <value>Mailboxes</value>
+  </data>
+  <data name="MailboxesEnableTitle" xml:space="preserve">
+    <value>Please choose from the list below on how to format the e-mail address:</value>
+  </data>
+  <data name="MailboxPlans" xml:space="preserve">
+    <value>Mailbox Plans</value>
+  </data>
+  <data name="MailboxSize" xml:space="preserve">
+    <value>Mailbox Size</value>
+  </data>
+  <data name="MailboxSizeLimit" xml:space="preserve">
+    <value>Mailbox Size Limit</value>
+  </data>
+  <data name="MAPI" xml:space="preserve">
+    <value>MAPI</value>
+  </data>
+  <data name="MaxAppsPerUser" xml:space="preserve">
+    <value>Max Apps per User</value>
+  </data>
+  <data name="MaxConflictInstances" xml:space="preserve">
+    <value>Maximum conflict instances</value>
+  </data>
+  <data name="MaxContacts" xml:space="preserve">
+    <value>Max Contacts</value>
+  </data>
+  <data name="MaxDistributionLists" xml:space="preserve">
+    <value>Max Distribution Lists</value>
+  </data>
+  <data name="MaxDomains" xml:space="preserve">
+    <value>Max Domains</value>
+  </data>
+  <data name="MaxDurationInMin" xml:space="preserve">
+    <value>Maximum duration (minutes)</value>
+  </data>
+  <data name="MaximumAttachmentSizeInKB" xml:space="preserve">
+    <value>Maximum attachment size (KB)</value>
+  </data>
+  <data name="MaxItemSize" xml:space="preserve">
+    <value>Max Item Size</value>
+  </data>
+  <data name="MaxMailboxes" xml:space="preserve">
+    <value>Max Mailboxes</value>
+  </data>
+  <data name="MaxMailboxSize" xml:space="preserve">
+    <value>Max Mailbox Size</value>
+  </data>
+  <data name="MaxMailEnabledPublicFolders" xml:space="preserve">
+    <value>Max Mail Enabled Public Folders</value>
+  </data>
+  <data name="MaxReceiveSize" xml:space="preserve">
+    <value>Max Receive Size</value>
+  </data>
+  <data name="MaxRecipients" xml:space="preserve">
+    <value>Max Recipients</value>
+  </data>
+  <data name="MaxResourceMailboxes" xml:space="preserve">
+    <value>Max Resource Mailboxes</value>
+  </data>
+  <data name="MaxSendSize" xml:space="preserve">
+    <value>Max Send Size</value>
+  </data>
+  <data name="MaxServersPerUser" xml:space="preserve">
+    <value>Max Servers per User</value>
+  </data>
+  <data name="MaxUsers" xml:space="preserve">
+    <value>Max Users</value>
+  </data>
+  <data name="MemberhsipApproval_2_A" xml:space="preserve">
+    <value>OPEN: Anyone can leave this group without being approved by the group owners</value>
+  </data>
+  <data name="Membership" xml:space="preserve">
+    <value>Membership</value>
+  </data>
+  <data name="MembershipApproval" xml:space="preserve">
+    <value>Membership Approval</value>
+  </data>
+  <data name="MembershipApproval2" xml:space="preserve">
+    <value>Can users leave?</value>
+  </data>
+  <data name="MembershipApproval_1" xml:space="preserve">
+    <value>Is owner approval required to join?</value>
+  </data>
+  <data name="MembershipApproval_1_A" xml:space="preserve">
+    <value>OPEN: Anyone can join this group without being approved by the group owners</value>
+  </data>
+  <data name="MembershipApproval_1_B" xml:space="preserve">
+    <value>CLOSED: Members can be added only by the group owners. All requests to join will be rejected automatically</value>
+  </data>
+  <data name="MembershipApproval_1_C" xml:space="preserve">
+    <value>OWNER APPROVAL: All requests are approved or rejected by the group owners</value>
+  </data>
+  <data name="MembershipApproval_2_B" xml:space="preserve">
+    <value>CLOSED: Members can be removed only by the group owners. All requests to leave will be rejected automatically</value>
+  </data>
+  <data name="MessageApproval" xml:space="preserve">
+    <value>Message Approval</value>
+  </data>
+  <data name="MessageApproval_A" xml:space="preserve">
+    <value>Messages sent to this group have to be approved by a moderator</value>
+  </data>
+  <data name="MessageApproval_B" xml:space="preserve">
+    <value>Notify all senders when their messages aren't approved</value>
+  </data>
+  <data name="MessageApproval_C" xml:space="preserve">
+    <value>Notify senders in your organization when their messages aren't approved</value>
+  </data>
+  <data name="MessageApproval_Column1" xml:space="preserve">
+    <value>Group Moderators</value>
+  </data>
+  <data name="MessageApproval_Column2" xml:space="preserve">
+    <value>Senders that don't require approval</value>
+  </data>
+  <data name="MessageApproval_D" xml:space="preserve">
+    <value>Don't notify anyone when a message isn't approved</value>
+  </data>
+  <data name="MiddleName" xml:space="preserve">
+    <value>Middle Name</value>
+  </data>
+  <data name="MinimumNumberOfCharSets" xml:space="preserve">
+    <value>Minimum number of character sets</value>
+  </data>
+  <data name="MinimumPasswordLength" xml:space="preserve">
+    <value>Minimum password length</value>
+  </data>
+  <data name="Modify" xml:space="preserve">
+    <value>Modify</value>
+  </data>
+  <data name="ModifyAccess" xml:space="preserve">
+    <value>Modify Access</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="NotificationErrorMailboxCannotEnable1" xml:space="preserve">
+    <value>Cannot enable user because you didn't select the 'Other' box. This user doesn't have the first and last name field populated.</value>
+  </data>
+  <data name="NotificationErrorMailboxCannotEnable2" xml:space="preserve">
+    <value>Cannot enable user because the users first name is not populated and you didn't select either the LastName field or the Other field.</value>
+  </data>
+  <data name="NotificationErrorMailboxCannotEnable3" xml:space="preserve">
+    <value>Cannot enable user because the users last name is not populated and you didn't select either the FirstName field or the Other field.</value>
+  </data>
+  <data name="NotificationErrorMailboxNoneSelected" xml:space="preserve">
+    <value>It looks like you did not select any users to enable for Exchange. Please go back and select the users you want to enable for Exchange</value>
+  </data>
+  <data name="NotificationErrorMailboxPlanDoesntSupport" xml:space="preserve">
+    <value>Your company's plan doesn't allow the amount of mailboxes that you selected. Please try to selected fewer mailboxes and try again.</value>
+  </data>
+  <data name="NotificationFailedDeleteAS" xml:space="preserve">
+    <value>Unable to delete Activesync plan because the following users are using it: </value>
+  </data>
+  <data name="NotificationSuccessAddAcceptedDomain" xml:space="preserve">
+    <value>Successfully added the domain as an accepted domain in Exchange.</value>
+  </data>
+  <data name="NotificationSuccessAddReseller" xml:space="preserve">
+    <value>Successfully created a new reseller</value>
+  </data>
+  <data name="NotificationSuccessCreatedAS" xml:space="preserve">
+    <value>Successfully created new Activesync policy </value>
+  </data>
+  <data name="NotificationSuccessCreatePFPlan" xml:space="preserve">
+    <value>Successfully created new public folder plan </value>
+  </data>
+  <data name="NotificationSuccessCreateUser" xml:space="preserve">
+    <value>Successfully created new user:</value>
+  </data>
+  <data name="NotificationSuccessDeleteAS" xml:space="preserve">
+    <value>Successfully deleted Activesync plan</value>
+  </data>
+  <data name="NotificationSuccessDeleteCompany" xml:space="preserve">
+    <value>Successfully deleted the company.</value>
+  </data>
+  <data name="NotificationSuccessDeleteGroup" xml:space="preserve">
+    <value>Successfully deleted the distribution group</value>
+  </data>
+  <data name="NotificationSuccessDeletePFPlan" xml:space="preserve">
+    <value>Successfully deleted public folder plan: </value>
+  </data>
+  <data name="NotificationSuccessDeleteUser" xml:space="preserve">
+    <value>Successfully deleted user: </value>
+  </data>
+  <data name="NotificationSuccessDisableExchange" xml:space="preserve">
+    <value>Successfully disabled company for Exchange.</value>
+  </data>
+  <data name="NotificationSuccessEnableExchange" xml:space="preserve">
+    <value>Successfully enabled company for Exchange.</value>
+  </data>
+  <data name="NotificationSuccessMailboxDisable" xml:space="preserve">
+    <value>Successfully diabled mailbox for user: </value>
+  </data>
+  <data name="NotificationSuccessMailboxEnabled" xml:space="preserve">
+    <value>Successfully enabled all users for email.</value>
+  </data>
+  <data name="NotificationSuccessMailboxUpdate" xml:space="preserve">
+    <value>Successfully updated mailbox: </value>
+  </data>
+  <data name="NotificationSuccessNewCompany" xml:space="preserve">
+    <value>Successfully created new company.</value>
+  </data>
+  <data name="NotificationSuccessRemoveAcceptedDomain" xml:space="preserve">
+    <value>Successfully removed the domain as an accepted domain. Any users that were using this domain to receive email will not longer be able to receive email on this domain.</value>
+  </data>
+  <data name="NotificationSuccessUpdateAS" xml:space="preserve">
+    <value>Successfully updated Activesync policy </value>
+  </data>
+  <data name="NotificationSuccessUpdateCompany" xml:space="preserve">
+    <value>Successfully updated company.</value>
+  </data>
+  <data name="NotificationSuccessUpdateGroup" xml:space="preserve">
+    <value>Successfully updated the distribution group</value>
+  </data>
+  <data name="NotificationSuccessUpdatePFPlan" xml:space="preserve">
+    <value>Successfully updated public folder plan </value>
+  </data>
+  <data name="NotificationSuccessUpdateReseller" xml:space="preserve">
+    <value>Successfully updated the reseller</value>
+  </data>
+  <data name="NotificationSuccessUpdateUser" xml:space="preserve">
+    <value>Successfully updated user: </value>
+  </data>
+  <data name="NotificationWarningDeletePFPlan" xml:space="preserve">
+    <value>Unable to delete the public folder plan because the following companies are using it: </value>
+  </data>
+  <data name="NotificationWarningMailboxSomeEnabled" xml:space="preserve">
+    <value>Successfully enabled some users but there were problems formatting some of the users email address. Problem users:</value>
+  </data>
+  <data name="NotificationWarningMailboxTooManyUsers" xml:space="preserve">
+    <value>You have selected too many users and that would have put you over the limit of mailboxes set for your company. Select fewer users or contact support to increase your limit.</value>
+  </data>
+  <data name="NotificationWarningSelectAS" xml:space="preserve">
+    <value>You did not select a Activesync plan. Please try again.</value>
+  </data>
+  <data name="NotificationWarningUpdateGroup" xml:space="preserve">
+    <value>Successfully updated distribution group settings but was unable to modify the members or owners</value>
+  </data>
+  <data name="NotSet" xml:space="preserve">
+    <value>Not Set</value>
+  </data>
+  <data name="NumberOfCompanies" xml:space="preserve">
+    <value>Number of Companies</value>
+  </data>
+  <data name="NumberOfFailedAttemptsAllowed" xml:space="preserve">
+    <value>Number of failed attempts allowed</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="OneMonth" xml:space="preserve">
+    <value>One Month</value>
+  </data>
+  <data name="Other" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="OverrideFeatures" xml:space="preserve">
+    <value>Override Features</value>
+  </data>
+  <data name="Overview" xml:space="preserve">
+    <value>Overview</value>
+  </data>
+  <data name="OWA" xml:space="preserve">
+    <value>OWA</value>
+  </data>
+  <data name="Ownership" xml:space="preserve">
+    <value>Ownership</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="PasswordExpirationInDays" xml:space="preserve">
+    <value>Password expiration (Days)</value>
+  </data>
+  <data name="PasswordHelp" xml:space="preserve">
+    <value>The password for the domain user you entered above.</value>
+  </data>
+  <data name="PasswordNeverExpires" xml:space="preserve">
+    <value>Password never expires</value>
+  </data>
+  <data name="PFHelp1" xml:space="preserve">
+    <value>Enter a name for this Public Folder plan.</value>
+  </data>
+  <data name="PFHelp10" xml:space="preserve">
+    <value>This is the amount this plan will cost the company.</value>
+  </data>
+  <data name="PFHelp2" xml:space="preserve">
+    <value>Enter a description for this Public Folder plan.</value>
+  </data>
+  <data name="PFHelp3" xml:space="preserve">
+    <value>The AgeLimit parameter specifies the overall age limit on the folder. Replicas of this public folder are automatically deleted when the age limit is exceeded.</value>
+  </data>
+  <data name="PFHelp4" xml:space="preserve">
+    <value>The RetainDeletedItemsFor parameter specifies the retention time for deleted items. This value is in days.</value>
+  </data>
+  <data name="PFHelp5" xml:space="preserve">
+    <value>The IssueWarningQuota parameter specifies the public folder size that triggers a warning to public folder owners stating that the folder is almost full. The max size you can enter is 2TB.</value>
+  </data>
+  <data name="PFHelp6" xml:space="preserve">
+    <value>The ProhibitPostQuota parameter specifies the size of a public folder at which users are notified that the public folder is full. Users can't post to a folder whose size is larger than the ProhibitPostQuota parameter value. The max size you can enter is 2TB.</value>
+  </data>
+  <data name="PFHelp7" xml:space="preserve">
+    <value>The MaxItemSize parameter specifies the maximum size for posted items. Items larger than the value of the MaxItemSize parameter are rejected. The max size you can enter is 2GB.</value>
+  </data>
+  <data name="PFHelp8" xml:space="preserve">
+    <value>The PerUserReadStateEnabled parameter specifies whether to maintain read and unread data on a per-user basis.</value>
+  </data>
+  <data name="PFHelp9" xml:space="preserve">
+    <value>Input the amount this plan will cost your company.</value>
+  </data>
+  <data name="Plan" xml:space="preserve">
+    <value>Plan</value>
+  </data>
+  <data name="Plans" xml:space="preserve">
+    <value>Plans</value>
+  </data>
+  <data name="PointofContact" xml:space="preserve">
+    <value>Point of Contact</value>
+  </data>
+  <data name="POP3" xml:space="preserve">
+    <value>POP3</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>Price</value>
+  </data>
+  <data name="PricePerAdditionalGB" xml:space="preserve">
+    <value>Price Per Additional GB</value>
+  </data>
+  <data name="PricePerCompany" xml:space="preserve">
+    <value>Price Per Company</value>
+  </data>
+  <data name="PricePerMailbox" xml:space="preserve">
+    <value>Price per Mailbox</value>
+  </data>
+  <data name="ProductOverview" xml:space="preserve">
+    <value>Product Overview</value>
+  </data>
+  <data name="ProhibitPostInMB" xml:space="preserve">
+    <value>Prohibit Post (MB)</value>
+  </data>
+  <data name="Properties" xml:space="preserve">
+    <value>Properties</value>
+  </data>
+  <data name="PublicFolderEnabled" xml:space="preserve">
+    <value>Public Folders Enabled</value>
+  </data>
+  <data name="PublicFolderEnabledHelp" xml:space="preserve">
+    <value>If you plan on offering public folders to your clients then make sure this is checked.</value>
+  </data>
+  <data name="PublicFolderPlans" xml:space="preserve">
+    <value>Public Folder Plans</value>
+  </data>
+  <data name="PublicFolders" xml:space="preserve">
+    <value>Public Folders</value>
+  </data>
+  <data name="PublicFolderServer" xml:space="preserve">
+    <value>Public Folder Server</value>
+  </data>
+  <data name="PublicFolderServerHelp" xml:space="preserve">
+    <value>Enter the NETBIOS or FQDN of the Exchange server that CloudPanel communicates with for public folders (Typically the mailbox servers).</value>
+  </data>
+  <data name="PublicFolder_Desc" xml:space="preserve">
+    <value>You can change your public folder plan to increase the amount of space and features you can use.</value>
+  </data>
+  <data name="PublicFolder_Title" xml:space="preserve">
+    <value>Change your public folder plan.</value>
+  </data>
+  <data name="PwdEnterAgain" xml:space="preserve">
+    <value>Enter Again</value>
+  </data>
+  <data name="RefreshIntervalInHours" xml:space="preserve">
+    <value>Refresh Interval (Hours)</value>
+  </data>
+  <data name="RejectRepeatingMeetingsPastBookTime" xml:space="preserve">
+    <value>Reject repeating meetings that have an end date beyond the booking window</value>
+  </data>
+  <data name="Reporting" xml:space="preserve">
+    <value>Reporting</value>
+  </data>
+  <data name="Reports" xml:space="preserve">
+    <value>Reports</value>
+  </data>
+  <data name="RequireAlphaNumericPassword" xml:space="preserve">
+    <value>Require alphanumeric password</value>
+  </data>
+  <data name="RequireEncryptionOnDevice" xml:space="preserve">
+    <value>Require Encryption on Device</value>
+  </data>
+  <data name="RequireEncryptionOnStorageCard" xml:space="preserve">
+    <value>Require Encryption on Storage Card</value>
+  </data>
+  <data name="RequireManualSyncWhenRoaming" xml:space="preserve">
+    <value>Require manual sync when roaming</value>
+  </data>
+  <data name="RequirePassword" xml:space="preserve">
+    <value>Require Password</value>
+  </data>
+  <data name="Reseller" xml:space="preserve">
+    <value>Reseller</value>
+  </data>
+  <data name="ResellerAdmin" xml:space="preserve">
+    <value>ResellerAdmin</value>
+  </data>
+  <data name="ResellerOverview" xml:space="preserve">
+    <value>Reseller Overview</value>
+  </data>
+  <data name="Resellers" xml:space="preserve">
+    <value>Resellers</value>
+  </data>
+  <data name="Resellers_TotalCompanies" xml:space="preserve">
+    <value>Total Companies</value>
+  </data>
+  <data name="Reseller_AddedSuccessfully" xml:space="preserve">
+    <value>Successfully created a new reseller</value>
+  </data>
+  <data name="Reseller_DeleteConfirm" xml:space="preserve">
+    <value>Are you sure you want to delete reseller</value>
+  </data>
+  <data name="Reseller_DeleteHeader" xml:space="preserve">
+    <value>Before deleting a reseller...</value>
+  </data>
+  <data name="Reseller_DeleteParagraph" xml:space="preserve">
+    <value>You must make sure that no companies are under this reseller. Also you must make sure that there are no organizational units under the reseller organizational unit in Active Directory.</value>
+  </data>
+  <data name="Reseller_UpdatedSuccessfully" xml:space="preserve">
+    <value>Successfully updated reseller</value>
+  </data>
+  <data name="ResetPassword" xml:space="preserve">
+    <value>Reset Password</value>
+  </data>
+  <data name="ResourceGeneral" xml:space="preserve">
+    <value>Resource General</value>
+  </data>
+  <data name="ResourceMailboxes" xml:space="preserve">
+    <value>Resource Mailboxes</value>
+  </data>
+  <data name="ResourcePolicy" xml:space="preserve">
+    <value>Resource Policy</value>
+  </data>
+  <data name="ResourceType" xml:space="preserve">
+    <value>Resource Type</value>
+  </data>
+  <data name="Results" xml:space="preserve">
+    <value>Results</value>
+  </data>
+  <data name="RunReport" xml:space="preserve">
+    <value>Run Report</value>
+  </data>
+  <data name="sAMAccountName" xml:space="preserve">
+    <value>sAMAccountName</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="SecurityCodeNotMatched" xml:space="preserve">
+    <value>The security code you entered does not match. This value is case sensitive. Please try again.</value>
+  </data>
+  <data name="SecurityGroups" xml:space="preserve">
+    <value>Security Groups</value>
+  </data>
+  <data name="SelectAll" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="Settings_ActiveDirectory" xml:space="preserve">
+    <value>Active Directory</value>
+  </data>
+  <data name="Settings_Advanced" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="Settings_Billing" xml:space="preserve">
+    <value>Billing</value>
+  </data>
+  <data name="Settings_BillingAdmins" xml:space="preserve">
+    <value>Billing Admins</value>
+  </data>
+  <data name="Settings_BruteForceBlocking" xml:space="preserve">
+    <value>Brute Force Blocking Enabled?</value>
+  </data>
+  <data name="Settings_BruteForceFailedCount" xml:space="preserve">
+    <value>Brute Force Failed Count</value>
+  </data>
+  <data name="Settings_BruteForceLockout" xml:space="preserve">
+    <value>Lockout In Minutes</value>
+  </data>
+  <data name="Settings_Citrix" xml:space="preserve">
+    <value>Citrix</value>
+  </data>
+  <data name="Settings_CitrixEnabled" xml:space="preserve">
+    <value>Citrix Enabled?</value>
+  </data>
+  <data name="Settings_CompanyNameInfo" xml:space="preserve">
+    <value>If you are not using Resellers then do not change this value after you start creating companies. CloudPanel uses the value you place in this field for the fake reseller account when you create new companies. Changing this will cause errors. If you must change it please visit the forums and get support.</value>
+  </data>
+  <data name="Settings_CorrectErrors" xml:space="preserve">
+    <value>Please correct the following errors and try again:</value>
+  </data>
+  <data name="Settings_CurrencySymbol" xml:space="preserve">
+    <value>Currency Symbol</value>
+  </data>
+  <data name="Settings_EnableResellers" xml:space="preserve">
+    <value>Enable Reseller Accounts?</value>
+  </data>
+  <data name="Settings_Exchange" xml:space="preserve">
+    <value>Exchange</value>
+  </data>
+  <data name="Settings_ExchangeConnectionType" xml:space="preserve">
+    <value>Exchange Connection Type</value>
+  </data>
+  <data name="Settings_ExchangeDatabases" xml:space="preserve">
+    <value>Exchange Databases</value>
+  </data>
+  <data name="Settings_ExchangeDBSizes" xml:space="preserve">
+    <value>Retrieve Exchange database sizes every X days</value>
+  </data>
+  <data name="Settings_ExchangeFqdn" xml:space="preserve">
+    <value>Excahnge Fqdn</value>
+  </data>
+  <data name="Settings_ExchangeMBSizes" xml:space="preserve">
+    <value>Retrieve Exchange mailbox sizes every X days</value>
+  </data>
+  <data name="Settings_ExchangePFFqdn" xml:space="preserve">
+    <value>Public Folder Server</value>
+  </data>
+  <data name="Settings_ExchangeSSLEnabled" xml:space="preserve">
+    <value>Exchange SSL Enabled?</value>
+  </data>
+  <data name="Settings_ExchangeStatsEnabled" xml:space="preserve">
+    <value>Exchange Statistics Enabled?</value>
+  </data>
+  <data name="Settings_ExchangeVersion" xml:space="preserve">
+    <value>Exchange Version</value>
+  </data>
+  <data name="Settings_General" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="Settings_HostingOU" xml:space="preserve">
+    <value>Hosting OU</value>
+  </data>
+  <data name="Settings_LogoCorner" xml:space="preserve">
+    <value>Left Corner Logo</value>
+  </data>
+  <data name="Settings_LogoCornerRecommended" xml:space="preserve">
+    <value>Recommended Size: 178w x 24h</value>
+  </data>
+  <data name="Settings_LogoCornerRecommendedWarn" xml:space="preserve">
+    <value>Not setting your logo close to this size can cause the logo not to appear or not display correctly.</value>
+  </data>
+  <data name="Settings_LogoLoginScreen" xml:space="preserve">
+    <value>Login Screen Logo</value>
+  </data>
+  <data name="Settings_Lync" xml:space="preserve">
+    <value>Lync</value>
+  </data>
+  <data name="Settings_LyncDialin" xml:space="preserve">
+    <value>Dialin URL</value>
+  </data>
+  <data name="Settings_LyncEnabled" xml:space="preserve">
+    <value>Lync Enabled?</value>
+  </data>
+  <data name="Settings_LyncFrontEnd" xml:space="preserve">
+    <value>Frontend Pool</value>
+  </data>
+  <data name="Settings_LyncMeeting" xml:space="preserve">
+    <value>Meeting URL</value>
+  </data>
+  <data name="Settings_LyncUserPool" xml:space="preserve">
+    <value>User Pool</value>
+  </data>
+  <data name="Settings_OnlyAllowSuperAdmins" xml:space="preserve">
+    <value>Only Allow Super Admins</value>
+  </data>
+  <data name="Settings_Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="Settings_PrimaryDC" xml:space="preserve">
+    <value>Primary Domain Controller</value>
+  </data>
+  <data name="Settings_SecurityGroups" xml:space="preserve">
+    <value>Security Groups</value>
+  </data>
+  <data name="Settings_SuperAdmins" xml:space="preserve">
+    <value>Super Admins</value>
+  </data>
+  <data name="Settings_SupportNotifications" xml:space="preserve">
+    <value>Support Notifications</value>
+  </data>
+  <data name="Settings_UseCustomNameAttribute" xml:space="preserve">
+    <value>Use Custom Name Attribute?</value>
+  </data>
+  <data name="Settings_Username" xml:space="preserve">
+    <value>DOMAIN\Username</value>
+  </data>
+  <data name="Settings_UsersOU" xml:space="preserve">
+    <value>Users OU</value>
+  </data>
+  <data name="Setting_ExchangePFEnabled" xml:space="preserve">
+    <value>Public Folders Enabled?</value>
+  </data>
+  <data name="SixMonths" xml:space="preserve">
+    <value>Six Months</value>
+  </data>
+  <data name="Size" xml:space="preserve">
+    <value>Size</value>
+  </data>
+  <data name="SizeInGB" xml:space="preserve">
+    <value>Size in GB</value>
+  </data>
+  <data name="SizeLimit" xml:space="preserve">
+    <value>Size Limit</value>
+  </data>
+  <data name="SpecificCompany" xml:space="preserve">
+    <value>Specific Company</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="Statistics" xml:space="preserve">
+    <value>Statistics</value>
+  </data>
+  <data name="SuperAdmins" xml:space="preserve">
+    <value>Super Admins</value>
+  </data>
+  <data name="SuperAdminsHelp" xml:space="preserve">
+    <value>Enter a list of Active Directory security groups that have full rights to CloudPanel. Example: Domain Admins,Enterprise Admins</value>
+  </data>
+  <data name="SyncSettings" xml:space="preserve">
+    <value>Sync Settings</value>
+  </data>
+  <data name="SystemHistory" xml:space="preserve">
+    <value>System History</value>
+  </data>
+  <data name="Telephone" xml:space="preserve">
+    <value>Telephone</value>
+  </data>
+  <data name="ThreeMonths" xml:space="preserve">
+    <value>Three Months</value>
+  </data>
+  <data name="Time" xml:space="preserve">
+    <value>Time</value>
+  </data>
+  <data name="Top5LargestCustomers" xml:space="preserve">
+    <value>Top 5 Largest Customers</value>
+  </data>
+  <data name="TwoWeeks" xml:space="preserve">
+    <value>Two Weeks</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="UserDeleteInfo" xml:space="preserve">
+    <value>Deleting this user is not reversable. Once the user is deleted, everything associated with the user will be gone forever.</value>
+  </data>
+  <data name="UserDeleteTitle" xml:space="preserve">
+    <value>Are you sure you want to delete this user?</value>
+  </data>
+  <data name="UserDetailReport" xml:space="preserve">
+    <value>User Detail Report</value>
+  </data>
+  <data name="UserDetailReportDesc" xml:space="preserve">
+    <value>This report list each customer and list each user in that company along with their name, login name, department, their current mailbox plan, and any additional MB added to their plan.</value>
+  </data>
+  <data name="UserEnable" xml:space="preserve">
+    <value>Enable User?</value>
+  </data>
+  <data name="USERHelp1" xml:space="preserve">
+    <value>First name of the user. This field is required.</value>
+  </data>
+  <data name="USERHelp10" xml:space="preserve">
+    <value>This setting will give the user rights to manage all companies within the same reseller.</value>
+  </data>
+  <data name="USERHelp11" xml:space="preserve">
+    <value>Check this box to make sure the user is enabled. Uncheck the box to disable the user account.</value>
+  </data>
+  <data name="USERHelp2" xml:space="preserve">
+    <value>Middle name of the user. This field is not required.</value>
+  </data>
+  <data name="USERHelp3" xml:space="preserve">
+    <value>Last name of the user. This field is not required</value>
+  </data>
+  <data name="USERHelp4" xml:space="preserve">
+    <value>The full name of the user. This field is the CN= and Name attribute in Active Directory. This field is required and must be unique.</value>
+  </data>
+  <data name="USERHelp5" xml:space="preserve">
+    <value>The display name will appear in Outlook and other areas. This field IS required.</value>
+  </data>
+  <data name="USERHelp6" xml:space="preserve">
+    <value>The department field can help you organize your users and make them easier to search.</value>
+  </data>
+  <data name="USERHelp7" xml:space="preserve">
+    <value>The login name is the characters before the @ symbol. Example: jdoe</value>
+  </data>
+  <data name="USERHelp8" xml:space="preserve">
+    <value>The login domain is the characters after the @ symbol. Example: knowmoreit.com</value>
+  </data>
+  <data name="USERHelp9" xml:space="preserve">
+    <value>This setting will give the user rights to manage the company they belong to.</value>
+  </data>
+  <data name="UserInformation" xml:space="preserve">
+    <value>User Information</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="UsernameHelp" xml:space="preserve">
+    <value>Domain account that has rights to create organization units, users, groups, and can modify permissions on those organizational units. This user also needs full access to Microsoft Exchange. (DOMAIN\USERNAME)</value>
+  </data>
+  <data name="UserRights" xml:space="preserve">
+    <value>User Rights</value>
+  </data>
+  <data name="Users" xml:space="preserve">
+    <value>Users</value>
+  </data>
+  <data name="UserSearch" xml:space="preserve">
+    <value>Search...</value>
+  </data>
+  <data name="UserStatus" xml:space="preserve">
+    <value>User Status</value>
+  </data>
+  <data name="VirtualApplications" xml:space="preserve">
+    <value>Virtual Applications</value>
+  </data>
+  <data name="VirtualServers" xml:space="preserve">
+    <value>Virtual Servers</value>
+  </data>
+  <data name="WarningSizeInMB" xml:space="preserve">
+    <value>Warning Size (MB)</value>
+  </data>
+  <data name="Warning_InvalidDomain" xml:space="preserve">
+    <value>Domain is invalid</value>
+  </data>
+  <data name="Website" xml:space="preserve">
+    <value>Website</value>
+  </data>
+  <data name="YouCannotDeleteDomain" xml:space="preserve">
+    <value>You cannot delete this domain because it is either an Accepted Domain in Exchange or this domain is in use by some users.</value>
+  </data>
+  <data name="ZipCode" xml:space="preserve">
+    <value>Zip Code</value>
+  </data>
+  <data name="Global_DisableLync" xml:space="preserve">
+    <value>Disable Lync</value>
+  </data>
+  <data name="Global_Lync" xml:space="preserve">
+    <value>Lync</value>
+  </data>
+  <data name="Global_Modify" xml:space="preserve">
+    <value>Modify</value>
+  </data>
+  <data name="Button_Disable" xml:space="preserve">
+    <value>Disable</value>
+  </data>
+  <data name="Button_Enable" xml:space="preserve">
+    <value>Enable</value>
+  </data>
+  <data name="Lync_EnableDescription" xml:space="preserve">
+    <value>This company has not been enabled for Microsoft Lync yet. Before this company can create Lync users you first must enable the company.</value>
+  </data>
+  <data name="Lync_EnableTitle" xml:space="preserve">
+    <value>Enable Microsoft Lync</value>
+  </data>
+</root>

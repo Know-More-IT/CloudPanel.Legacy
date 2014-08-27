@@ -1,0 +1,250 @@
+﻿ <%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Default.master.cs" Inherits="CloudPanel.Default" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="~/css/bootstrap.min.css" runat="server" />
+    <link rel="stylesheet" href="~/css/bootstrap-responsive.min.css" runat="server" />
+
+    <link rel="stylesheet" href="~/css/matrix-style.css" runat="server" />
+    <link rel="stylesheet" href="~/css/matrix-media.css" runat="server" />
+    <link rel="Stylesheet" href="~/css/jquery.gritter.css" runat="server" />
+
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+    <style type="text/css">
+        #gritter-notice-wrapper {
+            cursor: pointer;
+        }
+        .typeahead_wrapper { display: block; height: 30px; }
+        .typeahead_photo { float: left; max-width: 30px; max-height: 30px; margin-right: 5px; }
+        .typeahead_labels { float: left; height: 30px; }
+        .typeahead_primary { font-weight: bold; }
+        .typeahead_secondary { font-size: .8em; margin-top: -5px; }
+    </style>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+    <!--Header-part-->
+    <div id="header">
+        <h1 id="headerh1" runat="server"><a href="#">&nbsp;</a></h1>
+    </div>
+    <!--close-Header-part-->
+
+    <!--top-Header-menu-->
+    <div id="user-nav" class="navbar navbar-inverse">
+        <ul class="nav">
+            <li class="dropdown" id="profile-messages"><a title="" href="#" data-toggle="dropdown" data-target="#profile-messages" class="dropdown-toggle"><i class="icon icon-user">
+                </i><span class="text"><%= HttpContext.Current.User.Identity.Name %></span><b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><asp:LinkButton ID="lnkLogOut" runat="server" onclick="lnkLogOut_Click1"><i class="icon-key"><%= Resources.LocalizedText.Global_Signout %></asp:LinkButton></i></li>
+                </ul>
+            </li>
+            <% if (Request.IsLocal || IsSuperAdmin) { %>
+             <li class=""><a title="" href="~/logs.aspx" runat="server"><i class="icon icon-warning-sign"></i><span class="text"> <%= Resources.LocalizedText.Global_Logs %></span></a></li>
+             <li class=""><a title="" href="~/settings.aspx" runat="server"><i class="icon icon-cog"></i><span class="text"> <%= Resources.LocalizedText.Global_Settings %></span></a></li>
+            <% } %>
+            <li class=""><asp:LinkButton ID="lnkLogOut2" runat="server" onclick="lnkLogOut_Click1"><i class="icon icon-share-alt"></i> <%= Resources.LocalizedText.Global_Signout %></asp:LinkButton></li>
+        </ul>
+    </div>
+    <!--close-top-Header-menu-->
+
+    <!--start-top-serch-->
+    <% if (IsSuperAdmin || IsResellerAdmin) { %>
+    <div id="search">
+        <asp:TextBox ID="txtSearch" runat="server" Placeholder="<%$ Resources:LocalizedText, Master_SearchPlaceholder %>" AutoComplete="Off"></asp:TextBox>
+        <button id="btnSearch" type="submit" class="tip-bottom" title="Search" runat="server" onServerClick="btnSearch_Click">
+            <i class="icon-search icon-white"></i>
+        </button>
+    </div>
+    <% } %>
+    <!--close-top-serch-->
+
+    <!--sidebar-menu-->
+    <div id="sidebar">
+        <a href="#" class="visible-phone"><i class="icon icon-home"></i><%= Resources.LocalizedText.Global_Dashboard %></a>
+        <ul>
+            <li><a href="~/dashboard.aspx" runat="server"><i class="icon icon-home"></i><span><%= Resources.LocalizedText.Global_Dashboard %></span></a></li>
+
+            <% if (IsSuperAdmin && CloudPanel.Modules.Settings.Config.ResellersEnabled) { %>
+                <li><a href="~/resellers.aspx" runat="server"><i class="icon icon-user"></i><span><%= Resources.LocalizedText.Global_Resellers %></span></a></li>
+            <% } %>
+
+            <!-- Only show companies menu if a reseller has already been chosen, is a super admin, or a reseller admin -->
+            <% if ( (IsSuperAdmin || IsResellerAdmin) 
+                     && !string.IsNullOrEmpty(CloudPanel.Modules.Settings.CPContext.SelectedResellerCode))
+               { %>
+                <li><a href="~/companies.aspx" runat="server"><i class="icon icon-building"></i><span><%= Resources.LocalizedText.Global_Companies %></span></a></li>
+            <% } %>
+
+            <!-- Only show the plans menu if the logged in user is a SUPER ADMIN -->
+            <% if (IsSuperAdmin)
+               { %>
+                <li class="submenu" id="li_plans"><a href="#"><i class="icon icon-edit"></i><span><%= Resources.LocalizedText.Global_Plans %></span></a>
+                    <ul>
+                        <li><a href="~/plans/organization.aspx" runat="server"><span><%= Resources.LocalizedText.Global_CompanyPlans %></span></a></li>
+                        <li><a href="~/plans/mailbox.aspx" runat="server"><span><%= Resources.LocalizedText.Global_MailboxPlans %></span></a></li>
+                        <li><a href="~/plans/activesync.aspx" runat="server"><span><%= Resources.LocalizedText.Global_ActivesyncPlans %></span></a></li>
+                        <% if (CloudPanel.Modules.Settings.Config.CitrixEnabled) { %>
+                            <li><a href="~/plans/citrix.aspx" runat="server"><span><%= Resources.LocalizedText.Global_CitrixPlans %></span></a></li>
+                        <% } %>
+                    </ul>
+                </li>
+
+                <% if (!string.IsNullOrEmpty(CloudPanel.Modules.Settings.CPContext.SelectedResellerCode)) { %>
+                    <li class="submenu" id="li_superimport"><a href="#"><i class="icon icon-download-alt"></i><span><%= Resources.LocalizedText.Global_Import %></span></a>
+                        <ul>
+                            <li><a id="A2" href="~/import/companies.aspx" runat="server"><span><%= Resources.LocalizedText.Global_ImportCompany %></span></a></li>
+                        </ul>
+                    </li>
+                <% } %>
+
+            <% } %>
+
+            <% if (IsSuperAdmin || IsResellerAdmin) { %>
+                <li><a id="A1" href="~/reporting/reports.aspx" runat="server"><i class="icon icon-tasks"></i><span><%= Resources.LocalizedText.Global_Reports %></span></a></li>
+            <% } %>
+
+            <!-- Only show Company section if a company has already been selected -->
+            <% if (!string.IsNullOrEmpty(CloudPanel.Modules.Settings.CPContext.SelectedCompanyCode))
+               { %>
+                <hr />
+
+                <center><h5 class="text-warning"><strong><u><%= CloudPanel.Modules.Settings.CPContext.SelectedCompanyName %></u></strong></h5></center>
+                <li><a href="~/company/overview.aspx" runat="server"><i class="icon icon-dashboard"></i><span><%= Resources.LocalizedText.Global_Overview %></span></a></li>
+                <li><a href="~/company/domains/edit.aspx" runat="server"><i class="icon icon-globe"></i><span><%= Resources.LocalizedText.Global_Domains %></span></a></li>
+                <li><a href="~/company/users/edit.aspx" runat="server"><i class="icon icon-user"></i><span><%= Resources.LocalizedText.Global_Users %></span></a></li>
+                <li class="submenu" id="li_exchange"><a href="#"><i class="icon icon-edit"></i><span><%= Resources.LocalizedText.Global_MicrosoftExchange %></span></a>
+                    <ul>
+                        <% if (CloudPanel.Modules.Sql.SQLExchange.IsExchangeEnabled(CloudPanel.Modules.Settings.CPContext.SelectedCompanyCode)) { %>
+                            <% if (CloudPanel.classes.Authentication.PermDisableExchange) { %>
+                                <li><a href="~/company/exchange/enable.aspx" runat="server"><span><%= Resources.LocalizedText.Global_DisableEmail %></span></a></li>
+                            <% } %>
+                        <li><a href="~/company/exchange/domains.aspx" runat="server"><span><%= Resources.LocalizedText.Global_AcceptedDomains %></span></a></li>
+                        <li><a href="~/company/exchange/contacts.aspx" runat="server"><span><%= Resources.LocalizedText.Global_Contacts %></span></a></li>
+                        <li><a href="~/company/exchange/groups.aspx" runat="server"><span><%= Resources.LocalizedText.Global_DistributionGroups %></span></a></li>
+                        <li><a href="~/company/exchange/mailboxes.aspx" runat="server"><span><%= Resources.LocalizedText.Global_Mailboxes %></span></a></li>
+                        <li><a href="~/company/exchange/resourcemailbox.aspx" runat="server"><span><%= Resources.LocalizedText.Global_ResourceMailboxes %></span></a></li>
+                        <li><a href="~/company/exchange/publicfolders.aspx" runat="server"><span><%= Resources.LocalizedText.Global_PublicFolders %></span></a></li>
+                        <% } else { %>
+
+                            <% if (CloudPanel.classes.Authentication.PermEnableExchange) { %>
+                                <li><a href="~/company/exchange/enable.aspx" runat="server"><span><%= Resources.LocalizedText.Global_EnableEmail %></span></a></li>
+                            <% } %>
+
+                        <% } %>
+                    </ul>
+                </li>
+
+                <% if (CloudPanel.Modules.Settings.Config.LyncEnabled) { %>
+                <li class="submenu" id="li_lync"><a href="#"><i class="icon icon-comment"></i><span><%= Resources.LocalizedText.Global_MicrosoftLync %></span></a>
+                    <ul>
+                        <% if (CloudPanel.Modules.Sql.DbSql.IsLyncEnabled(CloudPanel.Modules.Settings.CPContext.SelectedCompanyCode)) { %>
+                            <li><a href="~/company/lync/enable.aspx" runat="server"><span><%= Resources.LocalizedText.Global_DisableLync %></span></a></li>
+                            <li><a href="~/company/lync/users.aspx" runat="server"><span><%= Resources.LocalizedText.Global_Users %></span></a></li>
+                        <% } else { %>
+                            <li><a href="~/company/lync/enable.aspx" runat="server"><span><%= Resources.LocalizedText.Global_EnableLync %></span></a></li>
+                        <% } %>
+                    </ul>
+                </li>
+                <% } %>
+
+                <% if (CloudPanel.Modules.Settings.Config.CitrixEnabled) { %>
+                <li class="submenu" id="li_citrix"><a href="#"><i class="icon icon-asterisk"></i><span><%= Resources.LocalizedText.Global_Citrix %></span></a>
+                    <ul>
+                        <li><a href="~/company/citrix/edit.aspx" runat="server"><span><%= Resources.LocalizedText.Global_ModifyAccess %></span></a></li>
+                    </ul>
+                </li>
+                <% } %>
+
+                <% if (IsSuperAdmin || IsResellerAdmin) { %>
+                <li class="submenu" id="li_billing"><a href="#"><i class="icon icon-money"></i><span><%= Resources.LocalizedText.Global_Billing %></span></a>
+                    <ul>
+                        <li><a href="~/company/billing/customprices.aspx" runat="server"><span><%= Resources.LocalizedText.Global_CustomPrice %></span></a></li>
+                    </ul>
+                </li>
+                <% } %>
+                <% if (IsSuperAdmin) { %>
+                    <li class="submenu" id="li_import"><a href="#"><i class="icon icon-download-alt"></i><span><%= Resources.LocalizedText.Global_Import %></span></a>
+                        <ul>
+                            <li><a id="A3" href="~/company/import/existingusers.aspx" runat="server"><span><%= Resources.LocalizedText.Global_Users %></span></a></li>
+                        </ul>
+                    </li>
+               <% } %>
+            <% } %>
+
+        </ul>
+    </div>
+    <asp:ContentPlaceHolder ID="cphSideBar" runat="server">
+    </asp:ContentPlaceHolder>
+    <!--sidebar-menu-->
+
+    <!--main-container-part-->
+    <ajaxToolkit:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server"></ajaxToolkit:ToolkitScriptManager>
+    <asp:ContentPlaceHolder ID="cphMainContainer" runat="server">
+    </asp:ContentPlaceHolder>
+    <!--end-main-container-part-->
+
+
+
+    <!--Footer-part-->
+    <div class="row-fluid">
+        <div id="footer" class="span12">
+            <%= DateTime.Now.Year.ToString() %> &copy; <%= CloudPanel.Modules.Settings.Config.HostersName %>
+            <div style="display: none"><asp:Button ID="btnExtendSession" runat="server" Text="Extend" OnClick="btnExtendSession_Click" /></div>
+        </div>
+    </div>
+    
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $("#sidebar a").filter(function () {
+                return location.href.match($(this).attr("href"))
+            }).parents().addClass("active");
+
+            if (window.location.href.indexOf("/plans/") >= 0)
+                $("#li_plans").attr('class', 'submenu open');
+            else if (window.location.href.indexOf("/company/exchange/") >= 0)
+                $("#li_exchange").attr('class', 'submenu open');
+            else if (window.location.href.indexOf("/company/citrix/") >= 0)
+                $("#li_citrix").attr('class', 'submenu open');
+            else if (window.location.href.indexOf("/company/billing/") >= 0)
+                $("#li_billing").attr('class', 'submenu open');
+            else if (window.location.href.indexOf("/company/import/") >= 0)
+                $("#li_import").attr('class', 'submenu open');
+            else if (window.location.href.indexOf("/import/companies.aspx") >= 0)
+                $("#li_superimport").attr('class', 'submenu open');
+
+
+            $('#<%= btnExtendSession.ClientID %>').hide();
+
+            // === Search input typeahead === //
+            $('#search input[type=text]').typeahead({
+                items: 10,
+                minLength: 2,
+                source: function (query, process) {
+                    var found = [];
+
+                    return $.post("<%= ResolveUrl("~/services/search.ashx") %>", function (data) {
+                        $.each(data, function (i, d) {
+                            found.push(d.DisplayName);
+                        });
+
+                        process(found);
+                    });
+                }
+            });
+        });
+
+    </script>
+        
+    </form>
+</body>
+</html>

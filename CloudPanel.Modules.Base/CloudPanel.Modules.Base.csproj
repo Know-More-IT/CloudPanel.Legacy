@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C3C06D1F-D9F3-4024-B438-B43D21C33751}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CloudPanel.Modules.Base</RootNamespace>
+    <AssemblyName>CloudPanel.Modules.Base</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseActivesyncPolicy.cs" />
+    <Compile Include="BaseCitrixApp.cs" />
+    <Compile Include="BaseContacts.cs" />
+    <Compile Include="BaseCustomPricing.cs" />
+    <Compile Include="BaseDashboard.cs" />
+    <Compile Include="BaseDistributionGroup.cs" />
+    <Compile Include="BaseEmailAliases.cs" />
+    <Compile Include="BaseForwardingInfo.cs" />
+    <Compile Include="BaseLargestCustomers.cs" />
+    <Compile Include="BaseMailbox.cs" />
+    <Compile Include="BaseMailPublicFolder.cs" />
+    <Compile Include="BasePlanCompany.cs" />
+    <Compile Include="BasePlanMailbox.cs" />
+    <Compile Include="BasePublicFolder.cs" />
+    <Compile Include="BaseSearchResults.cs" />
+    <Compile Include="BaseTasks.cs" />
+    <Compile Include="BaseTaskStatus.cs" />
+    <Compile Include="Active Directory\ADUser.cs" />
+    <Compile Include="Plans\CitrixPlan.cs" />
+    <Compile Include="Companies\Company.cs" />
+    <Compile Include="Database\DatabaseQueue.cs" />
+    <Compile Include="Database\DatabaseTask.cs" />
+    <Compile Include="Domains\Domain.cs" />
+    <Compile Include="Class\Enumerations.cs" />
+    <Compile Include="Class\ListBoxSorter.cs" />
+    <Compile Include="Plans\LyncPlan.cs" />
+    <Compile Include="Exchange\MailboxDatabase.cs" />
+    <Compile Include="Exchange\ExchangeGroup.cs" />
+    <Compile Include="Class\ForwardingObject.cs" />
+    <Compile Include="Exchange\MailboxPermissions.cs" />
+    <Compile Include="Exchange\MailboxPlan.cs" />
+    <Compile Include="Exchange\MailboxUser.cs" />
+    <Compile Include="Exchange\MailContact.cs" />
+    <Compile Include="Exchange\MailObject.cs" />
+    <Compile Include="Exchange\ResourceMailbox.cs" />
+    <Compile Include="Active Directory\SecurityGroup.cs" />
+    <Compile Include="Interface\IDatabase.cs" />
+    <Compile Include="Interface\IGroup.cs" />
+    <Compile Include="Interface\IMailbox.cs" />
+    <Compile Include="Interface\IPlan.cs" />
+    <Compile Include="Interface\IUser.cs" />
+    <Compile Include="MailboxDatabaseStatistics.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="BaseReseller.cs" />
+    <Compile Include="BaseRssKnownIssues.cs" />
+    <Compile Include="BaseUser.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Lync\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
