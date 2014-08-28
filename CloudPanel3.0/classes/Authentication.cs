@@ -4,12 +4,9 @@ using CloudPanel.Modules.Settings;
 using CloudPanel.Modules.Sql;
 using log4net;
 using System;
-using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
-using System.Linq;
 using System.Reflection;
-using System.Text;
 using System.Web;
 using System.Web.Security;
 
@@ -74,16 +71,19 @@ namespace CloudPanel.classes
                     CPContext.SelectedCompanyName = sqlUser.CompanyName;
 
                     // Set permissions for company admin                    
+                    logger.DebugFormat("Setting permissions for the company admin {0}", sqlUser.UserPrincipalName);
                     ADUser userPerm = DbSql.Get_CompanyAdminPermissions(HttpContext.Current.User.Identity.Name);
                     if (userPerm != null)
                     {
-                        PermEnableExchange      = userPerm.EnableExchangePermission;
-                        PermDisableExchange     = userPerm.DisableExchangePermission;
-                        PermAddDomain           = userPerm.AddDomainPermission;
-                        PermDeleteDomain        = userPerm.DeleteDomainPermission;
+                        PermEnableExchange = userPerm.EnableExchangePermission;
+                        PermDisableExchange = userPerm.DisableExchangePermission;
+                        PermAddDomain = userPerm.AddDomainPermission;
+                        PermDeleteDomain = userPerm.DeleteDomainPermission;
                         PermModifyAcceptedDomain = userPerm.ModifyAcceptedDomainPermission;
-                        PermImportUsers         = userPerm.ImportUsersPermission;
+                        PermImportUsers = userPerm.ImportUsersPermission;
                     }
+                    else
+                        logger.DebugFormat("No permissions were found in the database for user {0}", sqlUser.UserPrincipalName);
 
                     // Update allow login
                     allowedLogin = true;

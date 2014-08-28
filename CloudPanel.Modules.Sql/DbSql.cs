@@ -52,11 +52,22 @@ namespace CloudPanel.Modules.Sql
                     {
                         foundUser.UserPrincipalName = userPrincipalName;
                         foundUser.EnableExchangePermission      = r["EnableExchange"] == DBNull.Value ? false : bool.Parse(r["EnableExchange"].ToString());
+                        logger.DebugFormat("User {0} enable exchange permission is {1}", userPrincipalName, foundUser.EnableExchangePermission);
+
                         foundUser.DisableExchangePermission     = r["DisableExchange"] == DBNull.Value ? false : bool.Parse(r["DisableExchange"].ToString());
+                        logger.DebugFormat("User {0} disable exchange permission is {1}", userPrincipalName, foundUser.DisableExchangePermission);
+
                         foundUser.AddDomainPermission           = r["AddDomain"] == DBNull.Value ? false : bool.Parse(r["AddDomain"].ToString());
+                        logger.DebugFormat("User {0} add domain permission is {1}", userPrincipalName, foundUser.AddDomainPermission);
+
                         foundUser.DeleteDomainPermission        = r["DeleteDomain"] == DBNull.Value ? false : bool.Parse(r["DeleteDomain"].ToString());
+                        logger.DebugFormat("User {0} delete domain permission is {1}", userPrincipalName, foundUser.DeleteDomainPermission);
+
                         foundUser.ModifyAcceptedDomainPermission = r["ModifyAcceptedDomain"] == DBNull.Value ? false : bool.Parse(r["ModifyAcceptedDomain"].ToString());
+                        logger.DebugFormat("User {0} modify accepted domain permission is {1}", userPrincipalName, foundUser.ModifyAcceptedDomainPermission);
+                        
                         foundUser.ImportUsersPermission         = r["ImportUsers"] == DBNull.Value ? false : bool.Parse(r["ImportUsers"].ToString());
+                        logger.DebugFormat("User {0} import users permission is {1}", userPrincipalName, foundUser.ImportUsersPermission);
                     }
                 }
                 else
@@ -67,6 +78,7 @@ namespace CloudPanel.Modules.Sql
             }
             catch (Exception ex)
             {
+                logger.ErrorFormat("Error getting company admin permissions for {0}", userPrincipalName);
                 throw;
             }
             finally

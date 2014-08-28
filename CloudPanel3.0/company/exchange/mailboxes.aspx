@@ -190,11 +190,16 @@
                                       <div class="radio" id="uniform-undefined"><span class=""><asp:RadioButton ID="rbFormatLastFirst" runat="server" GroupName="EnableUser" /></span></div>
                                       <%= Resources.LocalizedText.LastName %><%= Resources.LocalizedText.FirstName %> [%s%g] <a href="#" title="Example: DoeJohn@domain.com" class="tip-right"><i class="icon-question-sign"></i></a></label> 
                                     <label>
-                                      <div class="radio" id="uniform-undefined"><span class=""><asp:RadioButton ID="rbFormatFirstInitialLast" runat="server" GroupName="EnableUser" Checked="true" /></span></div>
+                                      <div class="radio" id="uniform-undefined"><span class=""><asp:RadioButton ID="rbFormatFirstInitialLast" runat="server" GroupName="EnableUser"/></span></div>
                                       <%= Resources.LocalizedText.FirstInitialLastName %> [%1g%s] <a href="#" title="Example: JDoe@domain.com" class="tip-right"><i class="icon-question-sign"></i></a></label> 
                                     <label>
                                       <div class="radio" id="uniform-undefined"><span class=""><asp:RadioButton ID="rbFormatLastFirstInitial" runat="server" GroupName="EnableUser" /></span></div>
                                       <%= Resources.LocalizedText.LastNameFirstInitial %> [%s%1g] <a href="#" title="Example: DoeJ@domain.com" class="tip-right"><i class="icon-question-sign"></i></a></label>
+                                    <label>
+                                      <div class="radio" id="uniform-undefined"><span class=""><asp:RadioButton ID="rbFormatUPN" runat="server" GroupName="EnableUser" Checked="true" /></span></div>
+                                      Login Name
+
+                                    </label>
                                     <label>
                                         <div class="radio" id="uniform-undefined"><span class=""><asp:RadioButton ID="rbFormatOther" runat="server" GroupName="EnableUser" /></span></div>
                                         <%= Resources.LocalizedText.Other %> <a href="#modalExchangeVariables" data-toggle="modal" style="text-decoration: underline"><%= Resources.LocalizedText.Help %></a></label>

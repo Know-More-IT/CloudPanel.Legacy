@@ -309,7 +309,7 @@ namespace CloudPanel.company.exchange
 
                 // Get the list of distribution groups
                 logger.DebugFormat("Getting list of exchange groups");
-                dt = SqlLibrary.ReadSql("SELECT DisplayName,DistinguishedName FROM Contacts WHERE CompanyCode=@CompanyCode", new SqlParameter("CompanyCode", CPContext.SelectedCompanyCode));
+                dt = SqlLibrary.ReadSql("SELECT DisplayName,DistinguishedName FROM DistributionGroups WHERE CompanyCode=@CompanyCode", new SqlParameter("CompanyCode", CPContext.SelectedCompanyCode));
                 if (dt != null)
                 {
                     foreach (DataRow r in dt.Rows)
@@ -445,9 +445,11 @@ namespace CloudPanel.company.exchange
                 MailboxUser user = powershell.Get_Mailbox(userPrincipalName);
 
                 // Set plan information
+                logger.DebugFormat("Setting mailbox plan...");
                 ddlEditMailboxPlan.SelectedIndex = ddlEditMailboxPlan.Items.IndexOf(ddlEditMailboxPlan.Items.FindByText(mailboxPlanName));
 
                 // Populate information
+                logger.DebugFormat("Setting mailbox plan...");
                 hfUserPrincipalName.Value = userPrincipalName;
                 hfDistinguishedName.Value = user.DistinguishedName;
                 txtDisplayName.Text = user.DisplayName;
@@ -456,6 +458,7 @@ namespace CloudPanel.company.exchange
                 cbDeliverToMailboxAndFoward.Checked = user.DeliverToMailboxAndForward;
 
                 // Get activesync policy
+                logger.DebugFormat("Checking for activesync policy");
                 if (string.IsNullOrEmpty(user.ActiveSyncMailboxPolicy))
                     ddlActiveSyncPlanEditMailbox.SelectedIndex = 0;
                 else
@@ -470,11 +473,13 @@ namespace CloudPanel.company.exchange
                 //
                 // Populate any forwarding address
                 //
+                logger.DebugFormat("Checking for forwarding address");
                 if (!string.IsNullOrEmpty(user.ForwardingAddress))
                 {
+                    logger.DebugFormat("Forwarding address is {0}", user.ForwardingAddress);
                     string upper = user.ForwardingAddress.ToUpper();
 
-                    var item = ddlForwardTo.Items.Cast<ListItem>().Where(i => i.Value.ToUpper() == upper).First();
+                    var item = ddlForwardTo.Items.Cast<ListItem>().Where(i => i.Value.ToUpper() == upper).FirstOrDefault();
                     if (item != null)
                         ddlForwardTo.SelectedValue = item.Value;
                 }
@@ -1079,6 +1084,8 @@ namespace CloudPanel.company.exchange
                 return string.Format("{0}@{1}", firstName, domainName);
             else if (rbFormatLastName.Checked)
                 return string.Format("{0}@{1}", lastName, domainName);
+            else if (rbFormatUPN.Checked)
+                return string.Format("{0}@{1}", user.UserPrincipalName.Split('@')[0], domainName);
             else
             {
                 // User has selected other so now we need to parse the input
