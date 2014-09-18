@@ -366,7 +366,6 @@
     <Content Include="search.aspx" />
     <Content Include="services\api.asmx" />
     <Content Include="settings.aspx" />
-    <Content Include="TestPage.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -615,13 +614,6 @@
     <Compile Include="settings.aspx.designer.cs">
       <DependentUpon>settings.aspx</DependentUpon>
     </Compile>
-    <Compile Include="TestPage.aspx.cs">
-      <DependentUpon>TestPage.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="TestPage.aspx.designer.cs">
-      <DependentUpon>TestPage.aspx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -639,6 +631,7 @@
     <None Include="font-awesome\font\fontawesome-webfont.woff" />
     <None Include="font-awesome\font\FontAwesome.otf" />
     <Content Include="js\hogan-2.0.0.js" />
+    <None Include="Properties\PublishProfiles\Home E Drive.pubxml" />
     <None Include="Properties\PublishProfiles\Home.pubxml" />
     <None Include="Properties\PublishProfiles\Work.pubxml" />
     <Content Include="services\search.ashx" />
