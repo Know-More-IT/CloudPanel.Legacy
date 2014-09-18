@@ -372,12 +372,12 @@ namespace CloudPanel
                                               BEGIN
                                                      INSERT INTO Settings
                                                      (BaseOU, PrimaryDC, ExchangeFqdn, Username, Password, SuperAdmins, BillingAdmins, ExchangeConnectionType,
-                                                      ExchangePFServer, ExchangeVersion, PasswordMinLength, PasswordComplexityType, ExchangeFqdn, ExchangeSSLEnabled, ExchStats,
+                                                      ExchangePFServer, ExchangeVersion, PasswordMinLength, PasswordComplexityType, ExchangeSSLEnabled, ExchStats,
                                                       CitrixEnabled, PublicFolderEnabled, LyncEnabled, WebsiteEnabled, SQLEnabled, CurrencySymbol, CurrencyEnglishName, ResellersEnabled, 
                                                       CompanysName, AllowCustomNameAttrib, IPBlockingEnabled, IPBlockingFailedCount, IPBlockingLockedMinutes, ExchDatabases, UsersOU, LockdownEnabled,
                                                       LyncFrontEnd, LyncUserPool, LyncMeetingUrl, LyncDialinUrl, SupportMailEnabled, SupportMailAddress, SupportMailServer, SupportMailPort, SupportMailUsername, SupportMailPassword, SupportMailFrom) VALUES
                                                      (@BaseOU, @PrimaryDC, @ExchangeFqdn, @Username, @Password, @SuperAdmins, @BillingAdmins, @ExchangeConnectionType,
-                                                      @ExchangePFServer, @ExchangeVersion, @PasswordMinLength, @PasswordComplexityType, @ExchangeFqdn, @ExchangeSSLEnabled, @ExchStats,
+                                                      @ExchangePFServer, @ExchangeVersion, @PasswordMinLength, @PasswordComplexityType, @ExchangeSSLEnabled, @ExchStats,
                                                       @CitrixEnabled, @PublicFolderEnabled, @LyncEnabled, @WebsiteEnabled, @SQLEnabled, @CurrencySymbol, @CurrencyEnglishName, @ResellersEnabled, 
                                                       @CompanysName, @AllowCustomNameAttrib, @IPBlockingEnabled, @IPBlockingFailedCount, @IPBlockingLockedMinutes, @ExchDatabases, @UsersOU, @LockdownEnabled,
                                                       @LyncFrontEnd, @LyncUserPool, @LyncMeetingUrl, @LyncDialinUrl, @SupportMailEnabled, @SupportMailAddress, @SupportMailServer, @SupportMailPort, @SupportMailUsername, @SupportMailPassword, @SupportMailFrom)
@@ -385,7 +385,7 @@ namespace CloudPanel
                                               ELSE
                                               BEGIN
                                                      UPDATE Settings SET BaseOU=@BaseOU, PrimaryDC=@PrimaryDC, ExchangeFqdn=ExchangeFqdn, Username=@Username, Password=@Password, SuperAdmins=@SuperAdmins,
-                                                     BillingAdmins=@BillingAdmins, ExchangeFqdn=@ExchangeFqdn, ExchangeConnectionType=@ExchangeConnectionType, ExchangePFServer=@ExchangePFServer, ExchangeVersion=@ExchangeVersion, PasswordMinLength=@PasswordMinLength,
+                                                     BillingAdmins=@BillingAdmins, ExchangeConnectionType=@ExchangeConnectionType, ExchangePFServer=@ExchangePFServer, ExchangeVersion=@ExchangeVersion, PasswordMinLength=@PasswordMinLength,
                                                      PasswordComplexityType=@PasswordComplexityType, ExchangeSSLEnabled=@ExchangeSSLEnabled, ExchStats=@ExchStats, CitrixEnabled=@CitrixEnabled, PublicFolderEnabled=@PublicFolderEnabled,
                                                      LyncEnabled=@LyncEnabled, WebsiteEnabled=@WebsiteEnabled, SQLEnabled=@SQLEnabled, CurrencySymbol=@CurrencySymbol, CurrencyEnglishName=@CurrencyEnglishName, ResellersEnabled=@ResellersEnabled,
                                                      CompanysName=@CompanysName, AllowCustomNameAttrib=@AllowCustomNameAttrib, IPBlockingEnabled=@IPBlockingEnabled, IPBlockingFailedCount=@IPBlockingFailedCount, IPBlockingLockedMinutes=@IPBlockingLockedMinutes,
@@ -402,7 +402,6 @@ namespace CloudPanel
                 cmd.Parameters.AddWithValue("CompanysName", txtCompanysName.Text);
                 cmd.Parameters.AddWithValue("BaseOU", txtBaseOrganizationalUnit.Text);
                 cmd.Parameters.AddWithValue("PrimaryDC", txtDomainController.Text);
-                cmd.Parameters.AddWithValue("ExchangeFqdn", txtExchangeServer.Text);
                 cmd.Parameters.AddWithValue("Username", txtUsername.Text);
                 cmd.Parameters.AddWithValue("Password", DataProtection.Encrypt(txtPassword.Text, Config.Key));
                 cmd.Parameters.AddWithValue("SuperAdmins", txtSuperAdmins.Text);
