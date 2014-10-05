@@ -146,7 +146,9 @@ namespace CloudPanel.Modules.Sql
                                                 FROM
 	                                                SvcMailboxDatabaseSizes
                                                 WHERE
-	                                                Retrieved IN (SELECT MAX(Retrieved) FROM SvcMailboxDatabaseSizes) AND Retrieved >= DATEADD(d, -30, getdate())", sql);
+	                                                Retrieved >= DATEADD(d, -30, getdate())
+                                                ORDER BY
+                                                    Retrieved DESC", sql);
 
             try
             {
@@ -161,12 +163,18 @@ namespace CloudPanel.Modules.Sql
                 {
                     while (r.Read())
                     {
-                        mdbStats.Add(new MailboxDatabase()
+                        string dbName = r["DatabaseName"].ToString();
+
+                        bool alreadyExists = mdbStats.Any(x => x.Identity.Equals(dbName, StringComparison.CurrentCultureIgnoreCase));
+                        if (!alreadyExists)
                         {
-                            Identity = r["DatabaseName"].ToString(),
-                            DatabaseSize = r["DatabaseSize"].ToString(),
-                            WhenRetrieved = DateTime.Parse(r["Retrieved"].ToString())
-                        });
+                            mdbStats.Add(new MailboxDatabase()
+                            {
+                                Identity = r["DatabaseName"].ToString(),
+                                DatabaseSize = r["DatabaseSize"].ToString(),
+                                WhenRetrieved = DateTime.Parse(r["Retrieved"].ToString())
+                            });
+                        }
                     }
                 }
 

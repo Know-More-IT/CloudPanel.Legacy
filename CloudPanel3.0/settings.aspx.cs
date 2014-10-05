@@ -384,7 +384,7 @@ namespace CloudPanel
                                               END
                                               ELSE
                                               BEGIN
-                                                     UPDATE Settings SET BaseOU=@BaseOU, PrimaryDC=@PrimaryDC, ExchangeFqdn=ExchangeFqdn, Username=@Username, Password=@Password, SuperAdmins=@SuperAdmins,
+                                                     UPDATE Settings SET BaseOU=@BaseOU, PrimaryDC=@PrimaryDC, ExchangeFqdn=@ExchangeFqdn, Username=@Username, Password=@Password, SuperAdmins=@SuperAdmins,
                                                      BillingAdmins=@BillingAdmins, ExchangeConnectionType=@ExchangeConnectionType, ExchangePFServer=@ExchangePFServer, ExchangeVersion=@ExchangeVersion, PasswordMinLength=@PasswordMinLength,
                                                      PasswordComplexityType=@PasswordComplexityType, ExchangeSSLEnabled=@ExchangeSSLEnabled, ExchStats=@ExchStats, CitrixEnabled=@CitrixEnabled, PublicFolderEnabled=@PublicFolderEnabled,
                                                      LyncEnabled=@LyncEnabled, WebsiteEnabled=@WebsiteEnabled, SQLEnabled=@SQLEnabled, CurrencySymbol=@CurrencySymbol, CurrencyEnglishName=@CurrencyEnglishName, ResellersEnabled=@ResellersEnabled,
@@ -608,8 +608,6 @@ namespace CloudPanel
             Config.CustomNameAttribute = cbAllowCustomNameAttribute.Checked;
             Config.ExchangeStatsEnabled = cbExchangeStats.Checked;
             Config.BruteForceProtectionEnabled = cbIPBlockingEnabled.Checked;
-            Config.BruteForceFailedCount = int.Parse(txtIPBlockingFailedCount.Text);
-            Config.BruteForceLockoutInMin = int.Parse(txtIPBlockingLockedOutInMin.Text);
             Config.UsersOU = txtUsersOU.Text;
             Config.LockedDownModeEnabled = cbOnlySuperAdminLogin.Checked;
             Config.LyncEnabled = cbLyncEnabled.Checked;
@@ -623,6 +621,14 @@ namespace CloudPanel
             Config.SupportMailPort = int.Parse(txtSupportMailPort.Text);
             Config.SupportMailServer = txtSupportMailServer.Text;
             Config.SupportMailUsername = txtSupportMailUsername.Text;
+
+            int ipBlockingFailedCount = 10;
+            int.TryParse(txtIPBlockingFailedCount.Text, out ipBlockingFailedCount);
+            Config.BruteForceFailedCount = ipBlockingFailedCount;
+
+            int ipBlockingLockedOutInMin = 10;
+            int.TryParse(txtIPBlockingLockedOutInMin.Text, out ipBlockingLockedOutInMin);
+            Config.BruteForceLockoutInMin = ipBlockingLockedOutInMin;
 
             if (!string.IsNullOrEmpty(txtSupportMailPassword.Text))
                 Config.SupportMailPassword = DataProtection.Encrypt(txtSupportMailPassword.Text, Config.Key);

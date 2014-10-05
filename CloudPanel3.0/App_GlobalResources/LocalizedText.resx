@@ -1707,7 +1707,7 @@ If you do not see your domain listed here then you need to add the domain on the
     <value>Retrieve Exchange database sizes every X days</value>
   </data>
   <data name="Settings_ExchangeFqdn" xml:space="preserve">
-    <value>Excahnge Fqdn</value>
+    <value>Exchange Fqdn</value>
   </data>
   <data name="Settings_ExchangeMBSizes" xml:space="preserve">
     <value>Retrieve Exchange mailbox sizes every X days</value>

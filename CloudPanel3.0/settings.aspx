@@ -48,7 +48,6 @@
                       <li><a data-toggle="tab" href="#SecurityGroups"><%= Resources.LocalizedText.Settings_SecurityGroups %></a></li>
                       <li><a data-toggle="tab" href="#Billing"><%= Resources.LocalizedText.Settings_Billing %></a></li>
                       <li><a data-toggle="tab" href="#Exchange"><%= Resources.LocalizedText.Settings_Exchange %></a></li>
-                      <li><a data-toggle="tab" href="#Lync"><%= Resources.LocalizedText.Settings_Lync %></a></li>
                       <li><a data-toggle="tab" href="#Citrix"><%= Resources.LocalizedText.Settings_Citrix %></a></li>
                       <li><a data-toggle="tab" href="#Support"><%= Resources.LocalizedText.Settings_SupportNotifications %></a></li>
                       <li><a data-toggle="tab" href="#Advanced"><%= Resources.LocalizedText.Settings_Advanced %></a></li>

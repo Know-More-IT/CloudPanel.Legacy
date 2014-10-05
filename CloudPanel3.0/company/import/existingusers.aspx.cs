@@ -284,7 +284,9 @@ namespace CloudPanel.company.import
                         u.CompanyCode = companyCode;
 
                         // Make sure the user belongs to the AllUsers@ group
-                        adGroups.ModifyMembership("AllUsers@" + companyCode.Replace(" ", string.Empty), u.UserPrincipalName, System.DirectoryServices.AccountManagement.IdentityType.Name, System.DirectoryServices.AccountManagement.IdentityType.UserPrincipalName, false, false);
+                        adGroups.ModifyMembership("AllUsers@" + companyCode.Replace(" ", string.Empty), u.UserPrincipalName, 
+                            System.DirectoryServices.AccountManagement.IdentityType.Name, System.DirectoryServices.AccountManagement.IdentityType.UserPrincipalName, 
+                            false, false);
 
                         SQLUsers.AddUser(u);
                     }
@@ -331,6 +333,7 @@ namespace CloudPanel.company.import
 
                 // Get the selected mailbox size based on the slider
                 int selectedSize = int.Parse(hfMailboxSizeMB.Value);
+                selectedPlan.SetSizeInMB = selectedSize;
 
                 // Calculate the additional MB that was added
                 int totalAdded = selectedSize - selectedPlan.SizeInMB;

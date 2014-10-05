@@ -85,7 +85,7 @@ namespace CloudPanel3._0
 
                 if (!validLogin)
                 {
-                    lbInfo.Text = Resources.LocalizedText.Login_InvalidSettings;
+                    lbInfo.Text = Resources.LocalizedText.Login_IncorrectPassword;
 
                     // DEBUG //
                     this.logger.Warn("User " + txtUsername.Text + " failed to authentication. IP: " + ip);
