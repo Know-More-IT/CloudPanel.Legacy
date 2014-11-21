@@ -53,7 +53,11 @@ namespace CloudPanel.Modules.ActiveDirectory
                 de = new DirectoryEntry("LDAP://" + this.domainController + "/" + orgUnitDN, this.username, this.password);
 
                 // Retrieve attributes
-                company.ObjectGuid  = Guid.Parse(de.Properties["objectGuid"].Value.ToString());
+                Guid result = new Guid();
+                Guid.TryParse(de.Properties["objectGUID"].Value.ToString(), out result);
+                logger.DebugFormat("{0}", de.Properties["objectGUID"].Value.ToString());
+
+                company.ObjectGuid  = result;
                 company.CompanyName = de.Properties["name"].Value.ToString();
                 company.CompanyCode = de.Properties["name"].Value.ToString();
                 company.DistinguishedName = de.Properties["distinguishedName"].Value.ToString();
