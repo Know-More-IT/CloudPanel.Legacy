@@ -15,7 +15,7 @@ namespace CloudPanel.Services.Scheduler.Class
     {
         // Log utility
         private static readonly ILog logger = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
-
+        
         public static void SendEmailMessage(string subject, string message)
         {
             try

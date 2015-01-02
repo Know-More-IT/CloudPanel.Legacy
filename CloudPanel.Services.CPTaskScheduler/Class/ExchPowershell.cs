@@ -8,6 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
+using System.Globalization;
 using System.Linq;
 using System.Management.Automation;
 using System.Management.Automation.Runspaces;
@@ -381,8 +382,8 @@ namespace CloudPanel.Services.CPScheduler.Class
                             foreach (PSObject o in foundStatistics)
                             {
                                 currentUser.UserPrincipalName = user.UserPrincipalName;
-                                currentUser.ItemCount = int.Parse(o.Members["ItemCount"].Value.ToString());
-                                currentUser.DeletedItemCount = int.Parse(o.Members["DeletedItemCount"].Value.ToString());
+                                currentUser.ItemCount = int.Parse(o.Members["ItemCount"].Value.ToString(), CultureInfo.InvariantCulture);
+                                currentUser.DeletedItemCount = int.Parse(o.Members["DeletedItemCount"].Value.ToString(), CultureInfo.InvariantCulture);
                                 currentUser.TotalItemSize = o.Members["TotalItemSize"].Value.ToString();
                                 currentUser.TotalDeletedItemSize = o.Members["TotalDeletedItemSize"].Value.ToString();
                                 currentUser.Database = o.Members["Database"].Value.ToString();
