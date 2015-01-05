@@ -259,6 +259,9 @@ namespace CloudPanel.Services.CPScheduler.Class
                 // Store what we find in this list so we can return the names of the databases
                 List<MailboxDatabase> databases = new List<MailboxDatabase>();
 
+                // When retrieved
+                DateTime when = DateTime.Now;
+
                 // Now read the returned values
                 Collection<PSObject> foundDatabases = powershell.Invoke();
                 if (foundDatabases != null)
@@ -289,6 +292,7 @@ namespace CloudPanel.Services.CPScheduler.Class
                         }
 
 
+                        db.WhenRetrieved = when;
                         databases.Add(db);
                     }
                 }

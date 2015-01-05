@@ -347,13 +347,13 @@ namespace CloudPanel.Modules.Base.Interface
             const long TB = 1024 * GB;
 
             if (_convertedsize > TB)
-                return (_convertedsize / TB).ToString("0.00") + " TB";
+                return (_convertedsize / TB).ToString("0.00", CultureInfo.InvariantCulture) + " TB";
             else if (_convertedsize > GB)
-                return (_convertedsize / GB).ToString("0.00") + " GB";
+                return (_convertedsize / GB).ToString("0.00", CultureInfo.InvariantCulture) + " GB";
             else if (_convertedsize > MB)
-                return (_convertedsize / MB).ToString("0.00") + " MB";
+                return (_convertedsize / MB).ToString("0.00", CultureInfo.InvariantCulture) + " MB";
             else
-                return (_convertedsize).ToString("0.00") + " KB";
+                return (_convertedsize).ToString("0.00", CultureInfo.InvariantCulture) + " KB";
         }
 
         /// <summary>
@@ -412,7 +412,7 @@ namespace CloudPanel.Modules.Base.Interface
                     break;
             }
 
-            return newSize.ToString();
+            return newSize.ToString(CultureInfo.InvariantCulture);
         }
     }
 }

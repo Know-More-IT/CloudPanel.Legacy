@@ -123,7 +123,7 @@ namespace CloudPanel.Modules.Base.Class
                     break;
             }
 
-            return newSize.ToString();
+            return newSize.ToString(CultureInfo.InvariantCulture);
         }
     }
 }

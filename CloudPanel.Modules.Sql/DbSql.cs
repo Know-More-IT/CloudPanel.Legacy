@@ -2621,7 +2621,7 @@ namespace CloudPanel.Modules.Sql
                 cmd.Parameters.AddWithValue("DatabaseName", db.Identity);
                 cmd.Parameters.AddWithValue("Server", db.Server);
                 cmd.Parameters.AddWithValue("DatabaseSize", db.DatabaseSize);
-                cmd.Parameters.AddWithValue("Retrieved", DateTime.Now);
+                cmd.Parameters.AddWithValue("Retrieved", db.WhenRetrieved);
 
                 // Open connection
                 sql.Open();
