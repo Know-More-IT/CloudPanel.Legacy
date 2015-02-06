@@ -279,7 +279,7 @@ namespace CloudPanel.Modules.Exchange
                 //
                 cmd = new PSCommand();
                 cmd.AddCommand("Remove-GlobalAddressList");
-                cmd.AddParameter("Identity", companyCode + " - GAL");
+                cmd.AddParameter("Identity", companyCode + " GAL");
                 cmd.AddParameter("Confirm", false);
                 cmd.AddParameter("DomainController", domainController);
                 powershell.Commands = cmd;
